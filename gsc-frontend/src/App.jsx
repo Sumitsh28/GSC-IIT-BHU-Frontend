@@ -1,20 +1,29 @@
-import './App.css'
-import gscLogo from '/assets/gscLogo.png'
+import "./App.css";
+import Footer from "./components/Footer";
+import Navbar from "./components/Navbar/Navbar";
+import { BrowserRouter, Routes } from "react-router-dom";
+import Video from "./components/Video";
 
 function App() {
-
   return (
     <>
-      <div className='text-center w-48 m-auto'>
-        <img className='' src={gscLogo} alt="GnSC Logo" />
-      </div>
-      <div className='text-center w-54 m-auto'>
-        <h1 className='text-3xl font-bold'>Games & Sports Council</h1>
-        <h1 className='text-3xl font-bold'>IIT (BHU) Varanasi</h1>
-      </div>
-      
+      <BrowserRouter>
+        <Navbar></Navbar>
+
+        <Routes>
+          {/* <Route exact path="/" element={<HomePage />} />
+          <Route exact path="/about" element={<AboutPage />} />
+          <Route exact path="/events" element={<EventsPage />} />
+          <Route exact path="/teams" element={<TeamPage />} />
+          <Route exact path="/clubs" element={<ClubsPage />} />
+          <Route exact path="/contacts" element={<ContactsPage />} /> */}
+        </Routes>
+        <Video></Video>
+
+        <Footer></Footer>
+      </BrowserRouter>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
