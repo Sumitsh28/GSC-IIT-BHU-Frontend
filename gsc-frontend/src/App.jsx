@@ -1,11 +1,12 @@
 import "./App.css";
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar/Navbar";
-import { BrowserRouter, Routes } from "react-router-dom";
-import Video from "./components/Video";
-import Stats from "./components/Stats";
-import Quotation from "./components/Quotation";
-import HomeAbout from "./components/HomeAbout";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from "./pages/Home";
+import About from "./pages/About";
+import Events from "./pages/Events";
+import Sports from "./pages/Sports";
+import Contact from "./pages/Contact";
 
 function App() {
   return (
@@ -14,17 +15,13 @@ function App() {
         <Navbar></Navbar>
 
         <Routes>
-          {/* <Route exact path="/" element={<HomePage />} />
-          <Route exact path="/about" element={<AboutPage />} />
-          <Route exact path="/events" element={<EventsPage />} />
-          <Route exact path="/teams" element={<TeamPage />} />
-          <Route exact path="/clubs" element={<ClubsPage />} />
-          <Route exact path="/contacts" element={<ContactsPage />} /> */}
+          <Route exact path="/" element={<Home />} />
+          <Route exact path="/about" element={<About />} />
+          <Route exact path="/events" element={<Events />} />
+          <Route exact path="/sports" element={<Sports />} />
+          <Route exact path="/contacts" element={<Contact />} />
         </Routes>
-        <Video></Video> 
-        <Stats></Stats>
-        <Quotation></Quotation>
-        <HomeAbout></HomeAbout>
+
         <Footer></Footer>
       </BrowserRouter>
     </>

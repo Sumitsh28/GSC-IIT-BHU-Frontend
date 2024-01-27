@@ -67,15 +67,15 @@ const Navbar = () => {
                 </li>
                 <li className="place-self-center">
                   <Link
-                    to="/teams"
+                    to="/sports"
                     className={`navitem block py-2 pl-3 pr-4 ${
-                      isActive("/teams") ? "text-[#4EABE0]" : "text-white"
+                      isActive("/sports") ? "text-[#4EABE0]" : "text-white"
                     }  smd:p-0`}
                   >
-                    TEAMS
+                    SPORTS
                   </Link>
                 </li>
-                <li className="place-self-center">
+                {/* <li className="place-self-center">
                   <Link
                     to="/clubs"
                     className={`navitem block py-2 pl-3 pr-4 ${
@@ -84,7 +84,7 @@ const Navbar = () => {
                   >
                     CLUBS
                   </Link>
-                </li>
+                </li> */}
                 <li className="place-self-center">
                   <Link
                     to="/contacts"
