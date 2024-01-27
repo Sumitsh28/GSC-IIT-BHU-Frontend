@@ -22,7 +22,9 @@ function App() {
           <Route exact path="/contacts" element={<ContactsPage />} /> */}
         </Routes>
         <Video></Video> 
-
+        <Stats></Stats>
+        <Quotation></Quotation>
+        <HomeAbout></HomeAbout>
         <Footer></Footer>
       </BrowserRouter>
     </>
