@@ -18,14 +18,14 @@ const Footer = () => {
           <ul className="lg:flex flex-col gap-2 mt-10 hidden">
             <li className="text-2xl font-extrabold">Other Links</li>
             <li className="hover:text-[#C7684A]">
-              <Link to="/teams">Teams</Link>
+              <Link to="/sports">Sports</Link>
             </li>
             <li className="hover:text-[#C7684A]">
               <Link to="/leagues">Leagues</Link>
             </li>
-            <li className="hover:text-[#C7684A]">
+            {/* <li className="hover:text-[#C7684A]">
               <Link to="/clubs">Clubs and Societies</Link>
-            </li>
+            </li> */}
             <li className="hover:text-[#C7684A]">
               <Link to="/spardha">Spardha</Link>
             </li>
@@ -46,7 +46,7 @@ const Footer = () => {
               <Link to="/events">Events</Link>
             </li>
             <li className="hover:text-[#C7684A]">
-              <Link to="/contactus">Contact Us</Link>
+              <Link to="/contacts">Contact</Link>
             </li>
           </ul>
 
