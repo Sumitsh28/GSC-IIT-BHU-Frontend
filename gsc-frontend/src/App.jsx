@@ -4,6 +4,7 @@ import Navbar from "./components/Navbar/Navbar";
 import { BrowserRouter, Routes } from "react-router-dom";
 import Video from "./components/Video";
 import Stats from "./components/Stats";
+import Quotation from "./components/Quotation";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
 
         <Footer></Footer>
       </BrowserRouter>
+      <Quotation />
     </>
   );
 }

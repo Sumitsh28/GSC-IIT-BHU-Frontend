@@ -32,9 +32,14 @@ module.exports = withMT({
       '33%':'33%' //background size for stats section
     },
     backgroundPosition:{
-      'top-4': 'center top 4.5rem', //background position for stats section
+      'top-4': 'center top 4.5rem', 
       'left-bottom': 'left bottom',
       'right-bottom': 'right bottom',
+      'left-top': 'left top',
+      'right-top': 'right top',
+    },
+    backgroundSize:{
+      'cover': 'cover',
     }
   },
   plugins: [],
