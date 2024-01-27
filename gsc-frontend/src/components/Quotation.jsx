@@ -7,7 +7,7 @@ const Quotation = () => {
         <div className="bg-[url('/assets/Quotationleftbottom.svg')] bg-no-repeat  bg-left-bottom">
           <div className="bg-[url('/assets/Quotationrighttop.svg')] bg-no-repeat  bg-right-top">
             <div className="bg-[url('/assets/Quotation.svg')] bg-no-repeat  bg-top-4">
-              <div className="text-center pt-44 pb-40 pl-52 pr-52">
+              <div className="text-center font-inter pt-44 pb-40 pl-52 pr-52">
                 <div className="text-white font-bold text-4xl pt-6">
                   IITBHU sports is a community of sports enthusiasts who are
                   maintaining their fitness even in these tough times.

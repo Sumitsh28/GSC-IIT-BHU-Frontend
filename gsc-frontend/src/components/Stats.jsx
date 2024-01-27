@@ -29,7 +29,7 @@ const Stats = () => {
         <div className="bg-[url('/assets/STATS.svg')] bg-no-repeat bg-top-4 bg-33%">
           <div className="bg-[url('/assets/DiscusThrower.svg')] bg-no-repeat bg-right-bottom bg-18%">
             <div className="flex justify-evenly pt-32 pb-40">
-              <div className="text-center flex flex-col">
+              <div className="text-center font-inter flex flex-col">
                 <img style={{ height: "100px" }} src={Heart} alt="Heart" />
                 <div className="text-white font-bold text-3xl pt-6">{core}</div>
                 <div className="text-white font-semibold text-2xl pt-2">
