@@ -4,7 +4,7 @@ const Quotation = () => {
   return (
     <div className="bg-[url('/assets/QuotationBackground.svg')] bg-no-repeat bg-cover">
       <div className="bg-[url('/assets/Swimmer.svg')] bg-no-repeat  bg-right-bottom">
-        <div className="bg-[url('/assets/Quotationleftbottom.svg')] bg-no-repeat  bg-left-bottom">
+        <div className="bg-[url('/assets/Quotationleftbottom.svg')] bg-no-repeat  bg-left-bottom ">
           <div className="bg-[url('/assets/Quotationrighttop.svg')] bg-no-repeat  bg-right-top">
             <div className="bg-[url('/assets/Quotation.svg')] bg-no-repeat  bg-top-4">
               <div className="text-center font-inter pt-44 pb-40 pl-52 pr-52">

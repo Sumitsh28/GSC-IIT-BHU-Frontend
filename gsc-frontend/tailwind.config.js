@@ -36,6 +36,7 @@ module.exports = withMT({
       'top-4': 'center top 4.5rem', 
       'left-bottom': 'left bottom',
       'left-bottom-2': 'left 7rem bottom ',
+      'left-bottom-3': 'left 4rem bottom ',
       'right-bottom-lg': 'right 30rem bottom ',
       'right-bottom-md': 'right 15rem bottom ',
       'right-bottom-sm': 'right 10rem bottom ',
@@ -43,7 +44,7 @@ module.exports = withMT({
       'left-top': 'left top',
       'right-top': 'right top',
       'right-top-2': 'right 13rem top',
-      'right-top-3': 'right 8rem top 3rem',
+      'right-top-3': 'right 5rem top 4rem',
 
     },
     backgroundSize:{
