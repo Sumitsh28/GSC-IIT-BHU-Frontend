@@ -1,6 +1,8 @@
+.image-filter {
+  filter: brightness(10);
+  transition: filter;
+}
 
-
-
-
-
-
+.image-filter:hover {
+  filter: brightness(1);
+}
