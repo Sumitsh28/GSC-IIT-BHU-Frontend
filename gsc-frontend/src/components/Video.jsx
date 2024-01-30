@@ -7,7 +7,7 @@ const Video = () => {
             className="rounded-lg"
             width="1440"
             height="560"
-            src="https://www.youtube.com/embed/5rVw16UHLNw"
+            src="https://www.youtube.com/embed/5rVw16UHLNw?autoplay=1&mute=1"
             title="Spardha&#39;18 | Aftermovie"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             allowFullScreen
