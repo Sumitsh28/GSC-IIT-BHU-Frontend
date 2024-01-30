@@ -3,28 +3,33 @@ import Heart from "/assets/Heart.svg";
 import Temple from "/assets/Temple.svg";
 import Individual from "/assets/Individual.svg";
 import Team from "/assets/Team.svg";
+import { useInView } from "react-intersection-observer";
 const Stats = () => {
+  const a = 20; // Fetch from backend from hook 
   const [core, setCore] = useState(0);
   const [institute, setInstitute] = useState(0);
   const [clubs, setClubs] = useState(0);
   const [events, setEvents] = useState(0);
-  let timer = 0;
-  useEffect(() => {
-    clearInterval(timer);
-    if (core > 12 && clubs > 12 && events > 30 && institute > 13) return;
-
-    timer = setInterval(() => {
-      if (core <= 12) setCore(core + 1);
-      if (institute <= 13) setInstitute(institute + 1);
-      if (clubs <= 12) setClubs(clubs + 1);
-      if (events <= 30) setEvents(events + 1);
-    }, 10);
-    return () => clearInterval(timer);
-  }, [core, institute, clubs, events]);
-
+  const { ref, inView } = useInView({
+    threshold: 0.3,
+  });
+  useEffect(() => { 
+    let r;
+    console.log('Hello');
+    if(inView && core<a && institute<a && clubs<a && events<a){
+      r = setInterval(()=>{
+        setCore(c=>c+1);
+        setInstitute(i=>i+1);
+        setClubs(c=>c+1);
+        setEvents(e=>e+1);
+      },100)
+    }
+    return ()=>clearInterval(r);
+  }, [clubs,core,institute,events,inView]);
+  
   return (
     //For large screens
-    <div className="bg-statsbg ">
+    <div ref={ref} className="bg-statsbg ">
       <div className="bg-[url('/assets/Group.svg')] bg-no-repeat bg-left-bottom bg-18% ">
         <div className="bg-[url('/assets/STATS.svg')] bg-no-repeat bg-top-4 bg-33%">
           <div className="bg-[url('/assets/DiscusThrower.svg')] bg-no-repeat bg-right-bottom bg-18%">

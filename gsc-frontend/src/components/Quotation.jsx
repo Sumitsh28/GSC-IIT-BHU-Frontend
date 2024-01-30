@@ -1,5 +1,4 @@
 import React from "react";
-
 const Quotation = () => {
   return (
     <div className="bg-[url('/assets/QuotationBackground.svg')] bg-no-repeat bg-cover">
