@@ -1,0 +1,9 @@
+.image-filter {
+  filter: brightness(10);
+  transition: filter;
+}
+
+/* Remove brightness filter on hover to show the original color */
+.image-filter:hover {
+  filter: brightness(1);
+}
