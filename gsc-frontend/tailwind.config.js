@@ -34,6 +34,7 @@ module.exports = withMT({
     },
     backgroundPosition:{
       'top-4': 'center top 4.5rem', 
+      'top-3': 'center top 3rem', 
       'left-bottom': 'left bottom',
       'left-bottom-2': 'left 7rem bottom ',
       'left-bottom-3': 'left 4rem bottom ',
