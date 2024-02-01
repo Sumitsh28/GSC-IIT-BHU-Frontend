@@ -12,8 +12,15 @@ const Facilities = () => {
 
   const renderImages = () => {
     const overlayColors = ["#FDAB0A", "#D71C1B", "#264078", "#4EABE0"];
-    const displayText = ["GYMKHANA GROUND","IIT BHU","RAJPUTANA GROUND","ADV GROUND","SWIMMING POOL","NCC",]
-     
+    const displayText = [
+      "GYMKHANA GROUND",
+      "IIT BHU",
+      "RAJPUTANA GROUND",
+      "ADV GROUND",
+      "SWIMMING POOL",
+      "NCC",
+    ];
+
     // State to track the hovered image index
     const [hoveredImageIndex, setHoveredImageIndex] = useState(null);
 
@@ -52,18 +59,20 @@ const Facilities = () => {
   };
 
   return (
-    <div className="bg-[url('/assets/Cyclist.svg')] bg-no-repeat bg-right-bottom bg-[length:200px]">
-      <div className="bg-[url('/assets/Corner4.svg')] bg-no-repeat bg-left-bottom bg-[length:433px] ">
-        <div className="bg-[url('/assets/Corner3.svg')] bg-no-repeat bg-right-top bg-[length:426px] ">
-          <div className="p-20">
-            <div className="container mx-auto my-8 pt-4 pr-9 pb-4 pl-20">
-              {/* First Row */}
-              <div className="flex justify-center">
-                {renderImages().slice(0, 3)}
-              </div>
-              {/* Second Row */}
-              <div className="flex justify-center">
-                {renderImages().slice(3, 6)}
+    <div className="bg-[url('/assets/Facilities.svg')] bg-no-repeat  bg-top-3 bg-bottom bg-[length:500px] md:bg-top-1 ">
+      <div className="bg-[url('/assets/Cyclist.svg')] bg-no-repeat bg-right-bottom bg-[length:200px]">
+        <div className="bg-[url('/assets/Corner4.svg')] bg-no-repeat bg-left-bottom bg-[length:433px] ">
+          <div className="bg-[url('/assets/Corner3.svg')] bg-no-repeat bg-right-top bg-[length:426px] ">
+            <div className="p-20">
+              <div className="container mx-auto my-8 pt-4 pr-9 pb-4 pl-20">
+                {/* First Row */}
+                <div className="flex justify-center">
+                  {renderImages().slice(0, 3)}
+                </div>
+                {/* Second Row */}
+                <div className="flex justify-center">
+                  {renderImages().slice(3, 6)}
+                </div>
               </div>
             </div>
           </div>
