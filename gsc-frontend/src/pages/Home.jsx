@@ -5,6 +5,7 @@ import Video from "../components/Video";
 import Quotation from "../components/Quotation";
 import HeroSection from "../components/HeroSection";
 import Navbar from "../components/Navbar/Navbar";
+import Facilities from "../components/Facilities";
 
 function Home() {
   const [scrolling, setScrolling] = useState(false);
@@ -35,6 +36,7 @@ function Home() {
 
       <HomeAbout></HomeAbout>
       <Stats></Stats>
+      <Facilities></Facilities>
       <Video></Video>
       <Quotation></Quotation>
     </div>
