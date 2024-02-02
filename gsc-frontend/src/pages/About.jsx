@@ -1,6 +1,9 @@
 import React, { useEffect, useState } from "react";
-import AboutHeroSection from "../components/AboutHeroSection";
+import AboutHeroSection from "../components/About/AboutHeroSection";
+import AboutGallery from "../components/About/AboutGallery";
 import Navbar from "../components/Navbar/Navbar";
+import AboutPageSection2 from "../components/About/AboutPageSection2";
+import AboutPageSection1 from "../components/About/AboutPageSection1";
 
 function About() {
   const [scrolling, setScrolling] = useState(false);
@@ -24,6 +27,9 @@ function About() {
     <>
       <Navbar scrolling={scrolling} />
       <AboutHeroSection></AboutHeroSection>
+      <AboutPageSection1></AboutPageSection1>
+      <AboutPageSection2></AboutPageSection2>
+      <AboutGallery></AboutGallery>
     </>
   );
 }
