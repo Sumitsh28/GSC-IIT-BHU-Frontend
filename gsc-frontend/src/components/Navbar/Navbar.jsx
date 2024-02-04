@@ -41,7 +41,7 @@ const Navbar = ({ scrolling }) => {
               <Link to="/" className="items-center ">
                 <img
                   src="/assets/gscLogo.png"
-                  className="h-[7rem] mr-1"
+                  className="h-[44px] w-[56px] mt-5 mb-4 ml-1"
                   alt="GSC_Logo"
                 />
               </Link>
@@ -188,7 +188,7 @@ const Navbar = ({ scrolling }) => {
                 >
                   <span className="sr-only">Open main menu</span>
                   <svg
-                    className="w-6 h-6"
+                    className="w-8 h-8"
                     fill="currentColor"
                     viewBox="0 0 20 20"
                   >
