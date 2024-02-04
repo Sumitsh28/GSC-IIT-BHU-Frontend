@@ -84,14 +84,14 @@ const Quotation = () => {
                 <div className="bg-[url('/assets/Quotationrighttop.svg')] bg-no-repeat bg-[length:150px] sm:bg-[length:250px]  bg-right-top">
                   <div className="bg-[url('/assets/Quotation.svg')] bg-no-repeat bg-[length:25px] sm:bg-[length:50px]  bg-top-4">
                     {" "}
-                    <div className="text-center font-inter pt-44 pb-40 pl-52 pr-52 sm:pl-40 sm:pr-40 sm:pt-36 sm:pb-32">
+                    <div className="text-center font-inter pt-20 pb-12 pl-28 pr-28 sm:pl-32 sm:pr-40 sm:pt-36 sm:pb-32">
                       <div className="text-white font-medium sm:font-semibold text-xl sm:text-3xl pt-6">
                         {quote.quote}
                       </div>{" "}
-                      <div className="text-white font-medium sm:font-semibold text-md sm:text-lg pt-10">
+                      <div className="text-white font-medium sm:font-semibold text-md sm:text-lg pt-6 sm:pt-10">
                         {quote.person}
                       </div>
-                      <div className="text-white font-bold text-3xl sm sm:text-2xl pt-4">
+                      <div className="text-white font-bold text-3xl sm sm:text-2xl pt-2 sm:pt-4">
                         ---
                       </div>
                     </div>
