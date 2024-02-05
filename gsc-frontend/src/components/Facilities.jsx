@@ -23,6 +23,8 @@ const Facilities = () => {
 
     // State to track the hovered image index
     const [hoveredImageIndex, setHoveredImageIndex] = useState(null);
+    //State to track delay on entering and leaving
+    const [timeoutId, setTimeoutId] = useState(null);
 
     return imageUrls.map((url, index) => {
       const colorIndex = index % overlayColors.length;
@@ -32,8 +34,17 @@ const Facilities = () => {
         <div
           key={index}
           className="relative group overflow-hidden"
-          onMouseEnter={() => setHoveredImageIndex(index)}
-          onMouseLeave={() => setHoveredImageIndex(null)}
+          onMouseEnter={() => {
+            const id = setTimeout(() => setHoveredImageIndex(index), 500);
+            setTimeoutId(id);
+          }}
+          onMouseLeave={() => {
+            if (timeoutId) {
+              clearTimeout(timeoutId);
+              setTimeoutId(null);
+            }
+            setHoveredImageIndex(null);
+          }}
         >
           <div className="image-container relative w-366 h-393 rounded-lg overflow-hidden m-1">
             <img
@@ -59,12 +70,12 @@ const Facilities = () => {
   };
 
   return (
-    <div className="bg-[url('/assets/Facilities.svg')] bg-no-repeat  bg-top-3 bg-bottom bg-[length:500px] md:bg-top-1 ">
+    <div className="bg-[url('/assets/Facilities.svg')] bg-no-repeat  bg-top-3 bg-bottom bg-[length:906px]">
       <div className="bg-[url('/assets/Cyclist.svg')] bg-no-repeat bg-right-bottom bg-[length:200px]">
         <div className="bg-[url('/assets/Corner4.svg')] bg-no-repeat bg-left-bottom bg-[length:433px] ">
           <div className="bg-[url('/assets/Corner3.svg')] bg-no-repeat bg-right-top bg-[length:426px] ">
             <div className="p-20">
-              <div className="container mx-auto my-8 pt-4 pr-9 pb-4 pl-20">
+              <div className="container mx-auto my-8 pt-10 pr-9 pb-4 pl-20">
                 {/* First Row */}
                 <div className="flex justify-center">
                   {renderImages().slice(0, 3)}
