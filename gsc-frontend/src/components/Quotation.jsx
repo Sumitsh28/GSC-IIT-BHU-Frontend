@@ -37,9 +37,9 @@ const Quotation = () => {
                   <IconButton
                     variant="text"
                     color="white"
-                    size="lg"
+                    size="large"
                     onClick={handlePrev}
-                    className="!absolute top-2/4 left-2 -translate-y-2/4"
+                    className="!absolute top-2/4 left-8 sm:left-14 -translate-y-2/4"
                   >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -47,7 +47,7 @@ const Quotation = () => {
                       viewBox="0 0 24 24"
                       strokeWidth={2}
                       stroke="currentColor"
-                      className="h-6 w-6 "
+                      className="h-6 w-8  sm:h-9 sm:w-10"
                     >
                       <path
                         strokeLinecap="round"
@@ -61,9 +61,9 @@ const Quotation = () => {
                   <IconButton
                     variant="text"
                     color="white"
-                    size="lg"
+                    size="large"
                     onClick={handleNext}
-                    className="!absolute top-2/4 !right-2 -translate-y-2/4"
+                    className="!absolute top-2/4 !right-8 sm:!right-14 -translate-y-2/4"
                   >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -71,7 +71,7 @@ const Quotation = () => {
                       viewBox="0 0 24 24"
                       strokeWidth={2}
                       stroke="currentColor"
-                      className="h-6 w-6"
+                      className="h-6 w-8 sm:h-9 sm:w-10"
                     >
                       <path
                         strokeLinecap="round"
@@ -84,7 +84,7 @@ const Quotation = () => {
               >
                 {Quote.map((quote, index) => (
                   <div key={index}>
-                    <div className="text-center font-inter pt-20 pb-12 pl-28 pr-28 sm:pl-32 sm:pr-40 sm:pt-36 sm:pb-32">
+                    <div className="text-center font-inter pt-20 pb-12 pl-28 pr-28 sm:pl-40 sm:pr-40 sm:pt-36 sm:pb-32">
                       <div className="text-white font-medium sm:font-semibold text-xl sm:text-3xl pt-6">
                         {quote.quote}
                       </div>{" "}
