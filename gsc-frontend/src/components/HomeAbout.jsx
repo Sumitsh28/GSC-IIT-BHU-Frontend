@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const HomeAbout = () => {
   return (
     <div className="bg-[url('/assets/HomeAboutQuartercircle.svg')] bg-no-repeat bg-right-bottom bg-[length:250px]  md:bg-[length:302px]">
-    <div className="bg-[url('/assets/HomeAboutCorner.svg')] bg-no-repeat bg-right-bottom bg-[length:250px] ">
+    <div className="bg-[url('/assets/HomeAboutCorner.svg')] bg-no-repeat bg-right-bottom bg-[length:250px] md:bg-[length:302px] ">
       <div className="bg-[url('/assets/Batsman.svg')] bg-no-repeat bg-left-bottom sm:bg-left-bottom-3 md:bg-left-bottom-2 bg-[length:200px] ">
         <div className="bg-[url('/assets/Cricketball.svg')] bg-no-repeat bg-right-top  md:bg-right-top-3 bg-[length:250px] ">
       
