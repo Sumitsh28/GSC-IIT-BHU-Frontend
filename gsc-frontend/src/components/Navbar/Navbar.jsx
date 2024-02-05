@@ -125,7 +125,7 @@ const Navbar = ({ scrolling }) => {
                     >
                       <img
                         src={`${instagram}`}
-                        className="w-[29px] h-[31px] image-filter"
+                        className="w-[29px] h-[31px] image-filter mt-[3px]"
                       />
                     </Link>
                   </li>
