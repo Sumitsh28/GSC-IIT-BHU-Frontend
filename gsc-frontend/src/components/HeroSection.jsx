@@ -17,8 +17,8 @@ const HeroSection = () => {
   return (
 
 
-        <div className='h-[530px] lg:h-[640px] md:h-[500px] sm:h-[350px] bg-[#430D9B] flex flex-row  justify-center sm:gap-[50px] relative z-[-2]'> 
-               <div className='hidden sm:flex flex-col mt-[50px]  items-start   '>
+        <div className='h-[530px] lg:h-[704px] md:h-[560px] sm:h-[460px] bg-[#430D9B] flex flex-row  justify-center sm:gap-[40px] relative z-[-2]'> 
+               <div className='hidden sm:flex flex-col lg:mt-[140px] md:mt-[120px] sm:mt-[100px]  items-start   '>
                   <div className='flex flex-col items-start justify-center font-lexend my-[30px] '>
                    <p className=' lg:text-[50px] md:text-[40.5px] sm:text-[25.5px]  text-white font-bold font-lexend tracking-tight'>GAMES & SPORTS</p>
                    <p className=' lg:text-[50px] md:text-[40.5px] sm:text-[25.5px]  text-white font-bold font-lexend tracking-tight'>COUNCIL</p>
@@ -51,10 +51,10 @@ const HeroSection = () => {
                    
                 </div>
 
-                <div className='  md:w-[420px] md:h-[650px]  sm:w-[300px] sm:h-[450px] lg:w-[528px] lg:h-[676px] relative'><Carousel items={items} />
-                <img src={PatternBlue} className='hidden sm:flex absolute lg:bottom-6 md:bottom-[140px] sm:bottom-[95px] lg:left-[-200px] md:left-[-150px] sm:left-[-90px] z-[-1] lg:w-[350px] lg:h-[290px] md:w-[250px] md:h-[190px] sm:w-[150px] sm:h-[120px]'></img>
+                <div className='lg:mt-[108px] md:mt-[108px] sm:mt-[108px] md:w-[420px] md:h-[650px]  sm:w-[300px] sm:h-[450px] lg:w-[528px] lg:h-[676px] relative'><Carousel items={items} />
+                <img src={PatternBlue} className='hidden sm:flex absolute lg:bottom-14 md:bottom-[180px] sm:bottom-[100px] lg:left-[-200px] md:left-[-150px] sm:left-[-100px] z-[-1] lg:w-[350px] lg:h-[290px] md:w-[250px] md:h-[190px] sm:w-[180px] sm:h-[150px]'></img>
                 </div>
-                <img src={PatternQtr} className='hidden sm:flex absolute bottom-0 left-0 lg:w-[178px] lg:h-[176px] md:w-[120px] md:h-[118px] sm:w-[90px] sm:h-[88px]'></img>  
+                <img src={PatternQtr} className='hidden sm:flex absolute bottom-0 left-0 lg:w-[178px] lg:h-[176px] md:w-[120px] md:h-[118px] sm:w-[110px] sm:h-[108px]'></img>  
                 <img src={PatternOrg} className='hidden sm:flex absolute top-0 right-0 z-[-1] lg:w-[374px] lg:h-[390px] md:w-[274px] md:h-[290px] sm:w-[200px] sm:h-[220px]'></img> 
         </div>
   )

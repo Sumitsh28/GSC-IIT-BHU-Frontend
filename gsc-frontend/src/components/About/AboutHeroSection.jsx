@@ -1,5 +1,5 @@
 import React from 'react'
-import Icon from '../assets/AboutHeroIcon.svg'
+import Icon from '../../assets/AboutHeroIcon.svg'
 
 const AboutHeroSection = () => {
   return (
