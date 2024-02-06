@@ -33,6 +33,8 @@ const Quotation = () => {
               <Carousel
                 loop={true}
                 navigation={false}
+                autoplay={true}
+                autoplaySpeed={3000}
                 prevArrow={({ handlePrev }) => (
                   <IconButton
                     variant="text"
