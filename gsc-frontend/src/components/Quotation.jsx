@@ -91,13 +91,13 @@ const Quotation = () => {
                       <div className="text-white font-medium sm:font-semibold text-md sm:text-lg pt-6 sm:pt-10">
                         {quote.person}
                       </div>
+                      <div className="text-white font-bold text-3xl sm sm:text-2xl pt-2 sm:pt-4">
+                        ---
+                      </div>
                     </div>
                   </div>
                 ))}
               </Carousel>
-              <div className="text-white font-bold text-3xl sm sm:text-2xl pt-2 sm:pt-4">
-                ---
-              </div>
             </div>
           </div>
         </div>
