@@ -207,7 +207,7 @@ const Navbar = ({ scrolling }) => {
               {toggle ? (
                 <div
                   id="drawer-right-example"
-                  className="fixed top-0 right-0 z-40 w-[110vw] h-[110vh] p-4  overflow-y-auto transition-transform bg-[#d1d1cd] opacity-[0.94]"
+                  className="fixed top-0 right-0 z-40 w-[100vw] h-[110vh] p-4  overflow-y-auto transition-transform bg-[#d1d1cd] opacity-[0.94]"
                 >
                   <img
                     src="/assets/gscLogo.svg"
