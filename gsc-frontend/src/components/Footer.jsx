@@ -7,8 +7,9 @@ import {
 import { IoLocationSharp } from "react-icons/io5";
 import { FaPhoneAlt } from "react-icons/fa";
 import { MdAlternateEmail } from "react-icons/md";
-
+import "../App.css";
 import { Link } from "react-router-dom";
+import instagram from "../images/instagram.png";
 
 const Footer = () => {
   return (
@@ -54,7 +55,10 @@ const Footer = () => {
             <li className="text-2xl font-extrabold">Contact Us</li>
             <li className="flex flex-row gap-2 items-center">
               <IoLocationSharp />
-              IIT BHU, Varanasi, Uttar Pradesh, India Pincode - 221005
+              IIT BHU, Varanasi
+            </li>
+            <li className="flex flex-row gap-2 items-center">
+              Uttar Pradesh, India Pincode - 221005
             </li>
             <li className="flex flex-row gap-2 items-center">
               <FaPhoneAlt />
@@ -66,17 +70,37 @@ const Footer = () => {
             </li>
           </ul>
           <ul className="flex lg:flex-col text-3xl lg:mt-10 gap-4 flex-row justify-center mt-[1.5rem]">
-            <li className="place-self-center text-white hover:text-[#C7684A]">
-              <FaInstagram />
+            <li className="place-self-center">
+              <Link
+                to="https://www.instagram.com/games_and_sports_iitbhu/"
+                target="_blank"
+              >
+                <img src={`${instagram}`} className="w-[42px] image-filter" />
+              </Link>
             </li>
-            <li className="place-self-center text-white hover:text-[#C7684A]">
-              <FaFacebook />
+            <li className="place-self-center text-white hover:text-[#1869FF]">
+              <Link
+                to="https://www.facebook.com/gamesandsportscouncilIITBHU/"
+                target="_blank"
+              >
+                <FaFacebook />
+              </Link>
             </li>
-            <li className="place-self-center text-white hover:text-[#C7684A]">
-              <FaLinkedin />
+            <li className="place-self-center text-white hover:text-[#0065C7]">
+              <Link
+                to="https://www.linkedin.com/company/games-and-sports-council-iit-bhu-varanasi/mycompany/"
+                target="_blank"
+              >
+                <FaLinkedin />
+              </Link>
             </li>
-            <li className="place-self-center text-white hover:text-[#C7684A]">
-              <FaYoutube />
+            <li className="place-self-center text-white hover:text-[#FF0002]">
+              <Link
+                to="https://www.youtube.com/watch?v=5rVw16UHLNw&ab_channel=Film%26MediaCouncil%2CIIT%28BHU%29Varanasi"
+                target="_blank"
+              >
+                <FaYoutube />
+              </Link>
             </li>
           </ul>
         </div>

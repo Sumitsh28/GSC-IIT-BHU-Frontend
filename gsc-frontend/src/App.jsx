@@ -12,8 +12,7 @@ function App() {
   return (
     <>
       <BrowserRouter>
-        <Navbar></Navbar>
-
+        {/* <Navbar /> */}
         <Routes>
           <Route exact path="/" element={<Home />} />
           <Route exact path="/about" element={<About />} />
@@ -22,7 +21,7 @@ function App() {
           <Route exact path="/contacts" element={<Contact />} />
         </Routes>
 
-        <Footer></Footer>
+        <Footer />
       </BrowserRouter>
     </>
   );
