@@ -50,6 +50,11 @@ module.exports = withMT({
     },
     backgroundSize:{
       'cover': 'cover',
+    },
+    letterSpacing: {
+     
+      tight: '-.2em',
+      
     }
   },
   plugins: [],
