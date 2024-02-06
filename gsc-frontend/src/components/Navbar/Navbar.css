@@ -47,3 +47,12 @@
 .image-filter:hover {
   filter: brightness(1);
 }
+
+.image-filter-nav {
+  filter: brightness(0);
+  transition: filter;
+}
+
+.image-filter-nav:hover {
+  filter: brightness(1);
+}
