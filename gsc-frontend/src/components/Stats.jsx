@@ -34,30 +34,30 @@ const Stats = () => {
       <div className="bg-[url('/assets/Group.svg')] bg-no-repeat bg-left-bottom bg-[length:120px] smd:bg-[length:175px]  ">
         <div className="bg-[url('/assets/STATS.svg')] bg-no-repeat  bg-top-3 bg-[length:300px] smd:bg-[length:400px] md:bg-top-4 ">
           <div className="bg-[url('/assets/DiscusThrower.svg')] bg-no-repeat bg-right-bottom bg-[length:175px]  smd:bg-[length:250px]">
-            <div className=" grid grid-cols-2 gap-4 place-content-center  smd:flex  smd:justify-evenly pb-24 pt-24 smd:pt-32 smd:pb-40">
+            <div className=" grid grid-cols-1 gap-4 ss:grid-cols-2  place-content-center  smd:flex  smd:justify-evenly pb-24 pt-24 smd:pt-32 smd:pb-40">
               <div className="text-center font-inter flex flex-col">
                 <img className="image-stats" src={Heart} alt="Heart" />
-                <div className="text-white font-bold  text-xl xs:text-2xl smd:text-3xl pt-6">{core}</div>
-                <div className="text-white font-semibold text-lg xs:text-xl smd:text-2xl pt-2">
+                <div className="text-white font-bold  text-3xl xs:text-2xl smd:text-3xl pt-6">{core}</div>
+                <div className="text-white font-semibold text-2xl xs:text-xl smd:text-2xl pt-2">
                   Core Team Members
                 </div>
               </div>
               <div className="text-center flex flex-col">
                 <img className="image-stats" src={Team} alt="Team" />
-                <div className="text-white font-semibold smd:font-bold text-xl xs:text-2xl smd:text-3xl pt-6">
+                <div className="text-white font-semibold smd:font-bold text-3xl xs:text-2xl smd:text-3xl pt-6">
                   {institute}
                 </div>
-                <div className="text-white font-semibold text-lg xs:text-xl smd:text-2xl pt-2">
+                <div className="text-white font-semibold text-2xl xs:text-xl smd:text-2xl pt-2">
                   Institute Teams
                 </div>
               </div>
               <div className="text-center flex flex-col">
                 <img className="image-stats" src={Temple} alt="Temple" />
 
-                <div className="text-white font-semibold smd:font-bold text-xl xs:text-2xl smd:text-3xl pt-6">
+                <div className="text-white font-semibold smd:font-bold text-3xl xs:text-2xl smd:text-3xl pt-6">
                   {clubs}
                 </div>
-                <div className="text-white font-semibold text-lg xs:text-xl smd:text-2xl pt-2">
+                <div className="text-white font-semibold text-2xl xs:text-xl smd:text-2xl pt-2">
                   Clubs and Societies
                 </div>
               </div>
@@ -67,10 +67,10 @@ const Stats = () => {
                   src={Individual}
                   alt="Individual"
                 />
-                <div className="text-white font-semibold smd:font-bold text-xl xs:text-2xl smd:text-3xl pt-6">
+                <div className="text-white font-semibold smd:font-bold text-3xl xs:text-2xl smd:text-3xl pt-6">
                   {events}
                 </div>
-                <div className="text-white font-semibold text-lg xs:text-xl smd:text-2xl pt-2">
+                <div className="text-white font-semibold text-2xl xs:text-xl smd:text-2xl pt-2">
                   Events
                 </div>
               </div>

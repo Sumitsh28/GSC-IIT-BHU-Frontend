@@ -1,6 +1,6 @@
 .image-stats {
   @media (min-width: 320px) {
-    height: 45px;
+    height: 85px;
   }
   @media (min-width: 620px) {
     height: 60px;
