@@ -46,7 +46,7 @@ const Facilities = () => {
             setHoveredImageIndex(null);
           }}
         >
-          <div className="image-container relative w-[160px] sm:w-366 h-[176px] sm:h-393 rounded-lg overflow-hidden m-1">
+          <div className="image-container relative w-[120px] sm:w-[366px] sm:h-[393px] rounded-lg overflow-hidden m-1">
             <img
               src={url}
               alt={`Image ${index + 1}`}
@@ -60,7 +60,9 @@ const Facilities = () => {
             {/* Display text in the center on hover */}
             {hoveredImageIndex === index && (
               <div className="absolute inset-0 flex items-center justify-center">
-                <span className="text-white text-xl">{displayText[index]}</span>
+                <span className="text-white text-s sm:text-xl text-center">
+                  {displayText[index]}
+                </span>
               </div>
             )}
           </div>
@@ -70,10 +72,10 @@ const Facilities = () => {
   };
 
   return (
-    <div className="bg-[url('/assets/Facilities.svg')] bg-no-repeat bg-top-3 bg-bottom bg-[length:320px] sm:bg-[length:906px]">
+    <div className="bg-[url('/assets/Facilities.svg')] bg-no-repeat bg-top-2 sm:bg-top-3 bg-bottom bg-[length:320px] sm:bg-[length:906px]">
       <div className="bg-[url('/assets/Cyclist.svg')] bg-no-repeat bg-right-bottom bg-[length:97px] sm:bg-[length:200px]">
-        <div className="bg-[url('/assets/Corner4.svg')] bg-no-repeat bg-left-bottom bg-[length:145px] sm:bg-[length:433px] ">
-          <div className="bg-[url('/assets/Corner3.svg')] bg-no-repeat bg-right-top bg-[length:109px] sm:bg-[length:426px] ">
+        <div className="bg-[url('/assets/Corner4.svg')] bg-no-repeat bg-left-bottom bg-[length:145px] sm:bg-[length:433px]">
+          <div className="bg-[url('/assets/Corner3.svg')] bg-no-repeat bg-right-top bg-[length:109px] sm:bg-[length:426px]">
             <div className="sm:p-20">
               <div className="container mx-auto my-8 pt-10 pr-9 pb-4 pl-20 hidden sm:block">
                 {/* First Row */}
@@ -85,7 +87,7 @@ const Facilities = () => {
                   {renderImages().slice(3, 6)}
                 </div>
               </div>
-              <div className="flex flex-col container mx-auto pt-[80px] pb-[79px] sm:hidden justify-center">
+              <div className="flex flex-col container mx-auto pt-[65px] sm:pt-[80px] pb-[79px] sm:hidden justify-center">
                 {/* First Row */}
                 <div className="flex justify-center">
                   {renderImages().slice(0, 2)}

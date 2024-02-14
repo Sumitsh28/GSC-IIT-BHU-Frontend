@@ -42,8 +42,8 @@ const AboutGallery = () => {
                 </div>
               </div>
               {/* mobile view */}
-              <div className="sm:hidden">
-                <div className="flex flex-col mx-auto mt-[-20px] pb-[83px] ">
+              <div className="relative z-1 sm:hidden">
+                <div className="flex flex-col mx-auto mt-[-35px] pb-[83px] ">
                   <div className="flex justify-center">
                     <img
                       src="/assets/sample.jpg"
