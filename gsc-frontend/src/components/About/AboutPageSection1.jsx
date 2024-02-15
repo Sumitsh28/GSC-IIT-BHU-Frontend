@@ -6,7 +6,7 @@ const AboutPageSection1 = () => {
       <div className="relative sm:grid grid-cols-2 mx-6 hidden">
         <img
           src="/assets/Semicircle.png"
-          className="h-[200px] md:h-[350px] absolute right-[-25px] md:right-0 top-[-100px] md:top-[-176px] hidden sm:block"
+          className="h-[200px] md:h-[350px] absolute right-[-25px] top-[-100px] md:top-[-176px] hidden sm:block"
           alt="Semicircle"
         />
         {/* image-div start*/}
@@ -43,17 +43,17 @@ const AboutPageSection1 = () => {
         <div className="flex flex-row">
           <img
             src="/assets/IITBHUSportsLogo2.png"
-            className="h-[150px] my-auto"
+            className="w-[201px] h-[142px] my-auto"
             alt="GSC_Logo"
           />
-          <p className="font-lexend-exa text-[13px] text-[#000000] my-auto">
+          <p className="font-lexend-exa text-[10px] text-[#000000] my-auto mx-auto px-[35px] justify-center ml-[-68px] xxs:ml-[-30px]">
             The Games and Sports Council is responsible for administrating,
             regulating, and promoting games and sports activities around the IIT
             BHU campus.
           </p>
         </div>
 
-        <p className="font-lexend-exa text-[15px] text-[#000000] mx-auto pl-5">
+        <p className="font-lexend-exa text-[10px] text-[#000000] mx-auto mt-[-20px] px-[30px] pb-[15px]">
           The Games and Sports Council is responsible for administrating,
           regulating, and promoting games and sports activities around the IIT
           BHU campus.
