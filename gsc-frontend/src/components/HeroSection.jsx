@@ -7,7 +7,7 @@ import PatternBlue from '../assets/HeroSectionBluePattern.png'
 import PatternQtr from '../assets/HeroSectionQuaterPattern.png'
 import Vector from '../assets/Vector.png'
 
-const HeroSection = () => {
+const HeroSection = React.memo(() => {
   const items = [
     <img key="1" src="/assets/CarouselImage/IITBHUImage.svg" alt="Image 1" />,
     <img key="2" src="/assets/CarouselImage/IITBHUImage.svg" alt="Image 2" />,
@@ -46,18 +46,21 @@ const HeroSection = () => {
                      </div>
                     
                 </div>
-                <div className='sm:w-[0px] w-[290px] pl-[5px] lg:h-[345px] relative'><Carousel items={items} /></div>
+                <div className='sm:hidden w-[290px] pl-[15px] lg:h-[345px] relative'><Carousel items={items} /></div>
                      
                    
                 </div>
 
+                <div className='hidden  sm:flex '> 
                 <div className='lg:mt-[108px] md:mt-[108px] sm:mt-[108px] md:w-[420px] md:h-[650px]  sm:w-[300px] sm:h-[450px] lg:w-[528px] lg:h-[676px] relative'><Carousel items={items} />
-                <img src={PatternBlue} className='hidden sm:flex absolute lg:bottom-14 md:bottom-[180px] sm:bottom-[100px] lg:left-[-200px] md:left-[-150px] sm:left-[-100px] z-[-1] lg:w-[350px] lg:h-[290px] md:w-[250px] md:h-[190px] sm:w-[180px] sm:h-[150px]'></img>
+                <img src={PatternBlue} className='hidden sm:flex absolute lg:bottom-[69px] md:bottom-[200px] sm:bottom-[106px] lg:left-[-200px] md:left-[-150px] sm:left-[-100px] z-[-1] lg:w-[350px] lg:h-[290px] md:w-[250px] md:h-[190px] sm:w-[180px] sm:h-[150px]'></img>
                 </div>
+                </div>
+               
                 <img src={PatternQtr} className='hidden sm:flex absolute bottom-0 left-0 lg:w-[178px] lg:h-[176px] md:w-[120px] md:h-[118px] sm:w-[110px] sm:h-[108px]'></img>  
                 <img src={PatternOrg} className='hidden sm:flex absolute top-0 right-0 z-[-1] lg:w-[374px] lg:h-[390px] md:w-[274px] md:h-[290px] sm:w-[200px] sm:h-[220px]'></img> 
         </div>
   )
-}
+})
 
 export default HeroSection;
