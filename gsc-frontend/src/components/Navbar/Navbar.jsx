@@ -165,41 +165,39 @@ const Navbar = ({ scrolling }) => {
           `}
             style={navbarStyle}
           >
-            <div className="container flex flex-wrap items-center justify-between ml-[-0.5rem] mt-[-0.75rem] mb-[-1.75rem]">
+            <div className="container flex flex-wrap items-center justify-between mt-[-0.75rem] mb-[-1.75rem]">
               <Link to="/" className="items-center">
                 <img
                   src="/assets/gscLogo.svg"
-                  className="mt-3 pl-2"
+                  className="mt-3 pl-[-3.5rem]"
                   alt="GSC_logo"
                 />
               </Link>
               {/* <!-- drawer init and show --> */}
               {/* {!toggle ? ( */}
-              <div
-                className="text-center"
+
+              <button
+                ref={openButton}
+                className="text-white rounded-lg text-sm p-1.5 absolute top-[1.375rem] right-[1.625rem] inline-flex items-center"
+                type="button"
                 onClick={() => {
                   setToggle(true);
                 }}
               >
-                <button
-                  ref={openButton}
-                  className="text-white bg-transparent focus:ring-4 focus:ring-white font-medium rounded-lg text-sm px-5 pt-[1.25rem]"
-                  type="button"
+                <span className="sr-only">Open main menu</span>
+                <svg
+                  className="w-8 h-8 mb-[1.6rem]"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
                 >
-                  <span className="sr-only">Open main menu</span>
-                  <svg
-                    className="w-8 h-8 mb-[1.6rem] mr-[-1.5rem]"
-                    fill="currentColor"
-                    viewBox="0 0 20 20"
-                  >
-                    <path
-                      fillRule="evenodd"
-                      d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-                      clipRule="evenodd"
-                    ></path>
-                  </svg>
-                </button>
-              </div>
+                  <path
+                    fillRule="evenodd"
+                    d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                    clipRule="evenodd"
+                  ></path>
+                </svg>
+              </button>
+
               {/* ) : null} */}
 
               {/* <!-- drawer component --> */}
