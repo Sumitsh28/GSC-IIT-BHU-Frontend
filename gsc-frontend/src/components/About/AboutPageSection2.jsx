@@ -23,7 +23,7 @@ const AboutPageSection2 = () => {
         {showSubtext ? (
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            className="h-10 inline-block align-middle text-white"
+            className="h-7 inline-block align-middle text-white"
             viewBox="0 0 20 20"
             fill="currentColor"
           >
@@ -32,7 +32,7 @@ const AboutPageSection2 = () => {
         ) : (
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            className="h-10 inline-block align-middle text-white"
+            className="h-7 inline-block align-middle text-white"
             viewBox="0 0 20 20"
             fill="currentColor"
           >
@@ -45,28 +45,33 @@ const AboutPageSection2 = () => {
 
   return (
     // <div className="bg-[url('/assets/Group2.svg')] bg-no-repeat bg-left-bottom bg-[length:305px]">
-    <div className="grid sm:grid-cols-3 grid-cols-1">
-      <div className="relative w-full bg-[#3B0D86]">
+    <div className="flex flex-col sm:flex-row">
+      <div className="relative bg-[#3B0D86]">
         <img
           src="/assets/Leaf.svg"
           alt="SVG Icon"
-          className="absolute top-4 left-1/2 transform -translate-x-1/2"
+          className="absolute top-0 left-1/2 transform -translate-x-1/2 sm:hidden"
         />
         <img
           src="/assets/Group2.svg"
           alt="SVG Icon"
-          className="absolute left-0 bottom-0 hidden sm:block"
+          className="w-[250px] absolute left-0 bottom-0 hidden sm:block"
         />
-        <div className="flex items-center justify-center">
-          <p className="font-lexend font-bold text-[#FFFFFF] text-[22px] sm:text-[36px] pt-[70px] mb-[34px] text-center ml-14 pl-3 sm:pl-0 sm:ml-0">
-            OUR MISSION
+        <div className="justify-center">
+          <p className="relative font-lexend font-bold text-[#FFFFFF] text-[18px] sm:text-[25px] pt-[30px] mb-[10px] text-center sm:pt-[50px]">
+            OUR VISION
+            <p className="absolute top-[20px] right-[45px]">
+              <ToggleButton
+                handleClick={handleClick1}
+                showSubtext={showSubtext1}
+              />
+            </p>
           </p>
-          <ToggleButton handleClick={handleClick1} showSubtext={showSubtext1} />
         </div>
 
         {/* Subtext to display */}
         {showSubtext1 && (
-          <p className="font-lexend text-[13px] lg:text-[15px] text-[#FFFFFF] px-[50px] text-center pb-[50px]">
+          <p className="font-lexend text-[9px] lg:text-[15px] text-[#FFFFFF] px-[50px] text-center pb-[12px]">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ornare
             volutpat cursus. Integer bibendum maximus lectus, quis iaculis lorem
             molestie sed. Vivamus tempus ligula malesuada nisi accumsan, in
@@ -91,17 +96,22 @@ const AboutPageSection2 = () => {
         <img
           src="/assets/Group3.svg"
           alt="SVG Icon"
-          className="w-[230px] absolute top-4 left-1/2 transform -translate-x-1/2 sm:hidden"
+          className="w-[200px] absolute top-0 left-1/2 transform -translate-x-1/2 sm:hidden"
         />
-        <div className="flex">
-          <p className="font-lexend font-bold text-[#FFFFFF] text-[22px] sm:text-[36px] pt-[70px] mb-[34px] text-center ml-20 sm:ml-0">
-            OUR VISION
+        <div className="justify-center">
+          <p className="relative font-lexend font-bold text-[#FFFFFF] text-[18px] sm:text-[25px] pt-[30px] mb-[10px] text-center sm:pt-[50px]">
+            OUR MISSION
+            <p className="absolute top-[20px] right-[45px]">
+              <ToggleButton
+                handleClick={handleClick2}
+                showSubtext={showSubtext2}
+              />
+            </p>
           </p>
-          <ToggleButton handleClick={handleClick2} showSubtext={showSubtext2} />
         </div>
         {/* Subtext to display */}
         {showSubtext2 && (
-          <p className="font-lexend text-[13px] lg:text-[15px] text-[#FFFFFF] px-[50px] text-center pb-[50px]">
+          <p className="font-lexend text-[9px] lg:text-[15px] text-[#FFFFFF] px-[50px] text-center pb-[12px]">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ornare
             volutpat cursus. Integer bibendum maximus lectus, quis iaculis lorem
             molestie sed. Vivamus tempus ligula malesuada nisi accumsan, in
@@ -120,22 +130,27 @@ const AboutPageSection2 = () => {
         <img
           src="/assets/Leaf.svg"
           alt="SVG Icon"
-          className="absolute top-4 left-1/2 transform -translate-x-1/2"
+          className="w-[200px] absolute top-0 left-1/2 transform -translate-x-1/2 sm:hidden"
         />
         <img
           src="/assets/Group4.svg"
           alt="SVG Icon"
-          className="absolute right-0 top-0 hidden sm:block"
+          className="w-[250px] absolute right-0 top-0 hidden sm:block"
         />
-        <div className="flex">
-          <p className="font-lexend font-bold text-[#FFFFFF] text-[22px] sm:text-[36px] pt-[70px] mb-[34px] text-center ml-10 pl-5 sm:pl-0 sm:ml-0">
+        <div className="justify-center">
+          <p className="relative font-lexend font-bold text-[#FFFFFF] text-[18px] sm:text-[25px] pt-[30px] mb-[10px] text-center sm:pt-[50px]">
             OUR PASSION
+            <p className="absolute top-[20px] right-[45px]">
+              <ToggleButton
+                handleClick={handleClick3}
+                showSubtext={showSubtext3}
+              />
+            </p>
           </p>
-          <ToggleButton handleClick={handleClick3} showSubtext={showSubtext3} />
         </div>
         {/* Subtext to display */}
         {showSubtext3 && (
-          <p className="font-lexend text-[13px] lg:text-[15px] text-[#FFFFFF] px-[50px] text-center pb-[50px]">
+          <p className="font-lexend text-[9px] lg:text-[15px] text-[#FFFFFF] px-[50px] text-center pb-[12px]">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ornare
             volutpat cursus. Integer bibendum maximus lectus, quis iaculis lorem
             molestie sed. Vivamus tempus ligula malesuada nisi accumsan, in
