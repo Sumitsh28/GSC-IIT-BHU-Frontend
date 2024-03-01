@@ -1,7 +1,7 @@
 import React from "react";
 import "./TeamCard.css";
 // import { Gmail } from "@styled-icons/boxicons-logos/Gmail";
-import { Instagram } from "@styled-icons/boxicons-logos/Instagram";
+// import { Instagram } from "@styled-icons/boxicons-logos/Instagram";
 import { FaFacebook } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
