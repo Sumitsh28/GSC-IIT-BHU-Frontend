@@ -11,7 +11,7 @@ function TeamCard(props) {
   return (
     <div className="cardbox" style={{ backgroundImage: `url(${props.image})` }}>
       <div className="blackbox ">
-        <h2 className="card-title">{props.name}</h2>
+        <h2 className="card-title font-inter">{props.name}</h2>
         <div className="card-content">
           <div className="btn">
             <a

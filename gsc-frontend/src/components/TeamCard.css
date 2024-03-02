@@ -54,12 +54,13 @@
  
   .card-title {
     position: relative;
-    width: max-content;
-    font-size: 3.5rem;
+    width:  -webkit-fill-available;
+    font-size: 3rem;
     font-weight: 500;
-    padding-left: 50px;
-    font-family: "Inter";
+    /* padding-left: 50px; */
+    font-family: "Inter","sans serif";
     font-weight: 600;
+    text-align: center;
   }
 
   .card-body {
@@ -71,12 +72,19 @@
     font-weight: bold;
   }
   .cardbox:hover .card-title {
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    padding: 0;
+    /* top: 50%;
+    left: 50%; */
+    transform: translate(0, 200%);
+    /* padding: 0; */
+    /* text-align: center; */
+    transition: 0.7s ease-in-out;
   } 
-
+  .card-title{
+    transition: 0.5s ease-out;
+  }
+  .blackbox{
+    transition: 0.7s ease-out;
+  }
   .btn {
     display: flex;
     align-items: center;
@@ -94,9 +102,11 @@
       height: 385px;
     }
   }
-  @media (max-width: 816px) {
+  @media (max-width: 822px) {
     .cardbox {
       margin-bottom: 1rem;
+      min-width: 30ch;
+      height: 330px;
     }
   }
   @media (max-width: 470px) {
