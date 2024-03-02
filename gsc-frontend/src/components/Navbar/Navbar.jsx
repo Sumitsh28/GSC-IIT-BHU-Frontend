@@ -37,7 +37,7 @@ const Navbar = ({ scrolling }) => {
           `}
             style={navbarStyle}
           >
-            <div className="flex flex-wrap items-center justify-between ml-5">
+            <div className="flex md:flex-wrap items-center justify-between ml-5">
               <Link to="/" className="items-center ">
                 <img
                   src="/assets/gscMain.svg"
@@ -46,7 +46,7 @@ const Navbar = ({ scrolling }) => {
                 />
               </Link>
               <div
-                className="w-full hidden smd:block smd:w-auto mr-[1rem]"
+                className="w-auto hidden smd:block smd:w-auto mr-[1rem] md:w-full"
                 id="navbar-default"
               >
                 <ul className="flex flex-col mt-4 smd:flex-row smd:space-x-6 smd:mt-0 text-sm smd:bg-transparent">
@@ -258,23 +258,14 @@ const Navbar = ({ scrolling }) => {
                       <li>
                         <Link
                           onClick={() => closeButton.current.click()}
-                          to="/teams"
+                          to="/sports"
                           className="items-center p-2 text-black rounded-lg"
                         >
-                          <span className="whitespace-nowrap">TEAMS</span>
+                          <span className="whitespace-nowrap">SPORTS</span>
                         </Link>
                         <hr className="mt-3 h-[2.5px] bg-black border-0 mx-[4.75rem]"></hr>
                       </li>
-                      <li>
-                        <Link
-                          onClick={() => closeButton.current.click()}
-                          to="/clubs"
-                          className="items-center p-2 text-black rounded-lg"
-                        >
-                          <span className="whitespace-nowrap">CLUBS</span>
-                        </Link>
-                        <hr className="mt-3 h-[2.5px] bg-black border-0 mx-[4.75rem]"></hr>
-                      </li>
+                      
                       <li>
                         <Link
                           onClick={() => closeButton.current.click()}
