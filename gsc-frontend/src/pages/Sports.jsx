@@ -153,16 +153,16 @@ function Sports() {
         <div
           style={{
             position: "absolute",
-            top: "22%",
+            // top: "17%",
             left: "50%",
             transform: "translate(-50%, -50%)",
             fontSize: "11vw",
             color: "antiquewhite",
-            opacity:'0.5',
+            opacity:'0.6',
             // fontFamily:'lexend zetha',
             fontWeight:"bold"
           }}
-          className="font-lexend"
+          className="font-lexend top-32 md:top-48 sm:top-40 "
         >
           Sports
         </div>
