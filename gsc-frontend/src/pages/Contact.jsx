@@ -176,7 +176,7 @@ function Contact() {
   >
     Meet our team
   </div> */}
-  <div className="absolute font-lexend text-white sm:top-[20%] top-[25%] text-[40px] sm:text-[60px] md:text-[80px] lg:text-[100px] flex items-center   opacity-40 ">
+  <div className="absolute font-lexend text-white sm:top-[15%] top-[15%] text-[40px] sm:text-[60px] md:text-[80px] lg:text-[100px] flex items-center   opacity-40 ">
          <div className="hidden sm:flex sm:items-center sm:justify-center w-[100%]">
            <p>Meet our Team</p>
          </div>
@@ -186,7 +186,7 @@ function Contact() {
          </div>
   </div>
   
-  <div className="flex items-center flex-wrap justify-center sm:gap-20 pt-72 pb-20 px-10">
+  <div className="flex items-center flex-wrap justify-center sm:gap-20 sm:pt-[200px] pt-[220px] pb-20 px-10">
      <div className="hidden lg:flex w-[250px] h-[470px] bg-transparent">
     
      </div>
