@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Navbar from "../components/Navbar/Navbar";
 import HeroEvents from "../components/Events/HeroEvents";
-
+import EventCards from "../components/Events/EventCards";
 function Events() {
   const [scrolling, setScrolling] = useState(false);
 
@@ -24,6 +24,7 @@ function Events() {
     <>
       <Navbar scrolling={scrolling} />
       <HeroEvents />
+      <EventCards />
     </>
   );
 }
