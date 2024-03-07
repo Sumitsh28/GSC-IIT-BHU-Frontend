@@ -153,19 +153,20 @@ function Sports() {
         <div
           style={{
             position: "absolute",
-            top: "32%",
+            // top: "17%",
             left: "50%",
             transform: "translate(-50%, -50%)",
-            fontSize: "24vw",
+            fontSize: "11vw",
             color: "antiquewhite",
-            opacity:'0.7',
-            fontFamily:'lexend zetha',
+            opacity:'0.6',
+            // fontFamily:'lexend zetha',
             fontWeight:"bold"
           }}
+          className="font-lexend top-32 md:top-48 sm:top-40 "
         >
           Sports
         </div>
-        <div className="flex items-center flex-wrap justify-center sm:gap-20 pt-72 pb-20 px-10">
+        <div className="flex items-center flex-wrap justify-center sm:gap-20 pt-36 sm:pt-52 md:pt-64 pb-20 px-10">
           {data.map((member) => (
             <div>
               <TeamCard
