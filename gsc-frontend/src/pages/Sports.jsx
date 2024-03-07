@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from "react";
 import Navbar from "../components/Navbar/Navbar";
 import TeamCard from "../components/TeamCard";
-import cricket from "../assets/cricket.png"
+import cricket from "../assets/cricket.png";
+import { Link } from "react-router-dom";
 function Sports() {
   const [scrolling, setScrolling] = useState(false);
   const data = [
@@ -11,120 +12,134 @@ function Sports() {
       email: "john.doe@example.com",
       instagram: "john_doe_instagram",
       linkedin: "john_doe_linkedin",
-      twitter:"twitter",
-      facebook:"facebook"
-    },{
+      twitter: "twitter",
+      facebook: "facebook",
+    },
+    {
       name: "Cricket",
       imageUrl: cricket,
       email: "john.doe@example.com",
       instagram: "john_doe_instagram",
       linkedin: "john_doe_linkedin",
-      twitter:"twitter",
-      facebook:"facebook"
-    },{
+      twitter: "twitter",
+      facebook: "facebook",
+    },
+    {
       name: "Cricket",
       imageUrl: cricket,
       email: "john.doe@example.com",
       instagram: "john_doe_instagram",
       linkedin: "john_doe_linkedin",
-      twitter:"twitter",
-      facebook:"facebook"
-    },{
+      twitter: "twitter",
+      facebook: "facebook",
+    },
+    {
       name: "Cricket",
       imageUrl: cricket,
       email: "john.doe@example.com",
       instagram: "john_doe_instagram",
       linkedin: "john_doe_linkedin",
-      twitter:"twitter",
-      facebook:"facebook"
-    },{
+      twitter: "twitter",
+      facebook: "facebook",
+    },
+    {
       name: "Cricket",
       imageUrl: cricket,
       email: "john.doe@example.com",
       instagram: "john_doe_instagram",
       linkedin: "john_doe_linkedin",
-      twitter:"twitter",
-      facebook:"facebook"
-    },{
+      twitter: "twitter",
+      facebook: "facebook",
+    },
+    {
       name: "Cricket",
       imageUrl: cricket,
       email: "john.doe@example.com",
       instagram: "john_doe_instagram",
       linkedin: "john_doe_linkedin",
-      twitter:"twitter",
-      facebook:"facebook"
-    },{
+      twitter: "twitter",
+      facebook: "facebook",
+    },
+    {
       name: "Cricket",
       imageUrl: cricket,
       email: "john.doe@example.com",
       instagram: "john_doe_instagram",
       linkedin: "john_doe_linkedin",
-      twitter:"twitter",
-      facebook:"facebook"
-    },{
+      twitter: "twitter",
+      facebook: "facebook",
+    },
+    {
       name: "Cricket",
       imageUrl: cricket,
       email: "john.doe@example.com",
       instagram: "john_doe_instagram",
       linkedin: "john_doe_linkedin",
-      twitter:"twitter",
-      facebook:"facebook"
-    },{
+      twitter: "twitter",
+      facebook: "facebook",
+    },
+    {
       name: "Cricket",
       imageUrl: cricket,
       email: "john.doe@example.com",
       instagram: "john_doe_instagram",
       linkedin: "john_doe_linkedin",
-      twitter:"twitter",
-      facebook:"facebook"
-    },{
+      twitter: "twitter",
+      facebook: "facebook",
+    },
+    {
       name: "Cricket",
       imageUrl: cricket,
       email: "john.doe@example.com",
       instagram: "john_doe_instagram",
       linkedin: "john_doe_linkedin",
-      twitter:"twitter",
-      facebook:"facebook"
-    },{
+      twitter: "twitter",
+      facebook: "facebook",
+    },
+    {
       name: "Cricket",
       imageUrl: cricket,
       email: "john.doe@example.com",
       instagram: "john_doe_instagram",
       linkedin: "john_doe_linkedin",
-      twitter:"twitter",
-      facebook:"facebook"
-    },{
+      twitter: "twitter",
+      facebook: "facebook",
+    },
+    {
       name: "Cricket",
       imageUrl: cricket,
       email: "john.doe@example.com",
       instagram: "john_doe_instagram",
       linkedin: "john_doe_linkedin",
-      twitter:"twitter",
-      facebook:"facebook"
-    },{
+      twitter: "twitter",
+      facebook: "facebook",
+    },
+    {
       name: "Cricket",
       imageUrl: cricket,
       email: "john.doe@example.com",
       instagram: "john_doe_instagram",
       linkedin: "john_doe_linkedin",
-      twitter:"twitter",
-      facebook:"facebook"
-    },{
+      twitter: "twitter",
+      facebook: "facebook",
+    },
+    {
       name: "Cricket",
       imageUrl: cricket,
       email: "john.doe@example.com",
       instagram: "john_doe_instagram",
       linkedin: "john_doe_linkedin",
-      twitter:"twitter",
-      facebook:"facebook"
-    },{
+      twitter: "twitter",
+      facebook: "facebook",
+    },
+    {
       name: "Cricket",
       imageUrl: cricket,
       email: "john.doe@example.com",
       instagram: "john_doe_instagram",
       linkedin: "john_doe_linkedin",
-      twitter:"twitter",
-      facebook:"facebook"
+      twitter: "twitter",
+      facebook: "facebook",
     },
   ];
 
@@ -158,9 +173,9 @@ function Sports() {
             transform: "translate(-50%, -50%)",
             fontSize: "11vw",
             color: "antiquewhite",
-            opacity:'0.6',
+            opacity: "0.6",
             // fontFamily:'lexend zetha',
-            fontWeight:"bold"
+            fontWeight: "bold",
           }}
           className="font-lexend top-32 md:top-48 sm:top-40 "
         >
@@ -168,7 +183,7 @@ function Sports() {
         </div>
         <div className="flex items-center flex-wrap justify-center sm:gap-20 pt-36 sm:pt-52 md:pt-64 pb-20 px-10">
           {data.map((member) => (
-            <div>
+            <Link to="/cricket">
               <TeamCard
                 name={member.name}
                 image={member.imageUrl}
@@ -178,7 +193,7 @@ function Sports() {
                 facebook={member.facebook}
                 twitter={member.twitter}
               />
-            </div>
+            </Link>
           ))}
         </div>
       </div>

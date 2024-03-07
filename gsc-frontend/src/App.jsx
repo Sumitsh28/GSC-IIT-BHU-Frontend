@@ -7,6 +7,7 @@ import About from "./pages/About";
 import Events from "./pages/Events";
 import Sports from "./pages/Sports";
 import Contact from "./pages/Contact";
+import Cricket from "./pages/Cricket";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
           <Route path="/events" element={<Events />} />
           <Route path="/sports" element={<Sports />} />
           <Route path="/contacts" element={<Contact />} />
+          <Route path="/cricket" element={<Cricket/>}/>
         </Routes>
 
         <Footer />
