@@ -16,7 +16,6 @@ const Stats = () => {
   });
   useEffect(() => {
     let r;
-    // console.log('Hello');
     if (inView && core < a && institute < a && clubs < a && events < a) {
       r = setInterval(() => {
         setCore((c) => c + 1);
@@ -37,27 +36,27 @@ const Stats = () => {
             <div className=" grid grid-cols-1 gap-4 ss:grid-cols-2  place-content-center  smd:flex  smd:justify-evenly pb-24 pt-24 smd:pt-32 smd:pb-40">
               <div className="text-center font-inter flex flex-col">
                 <img className="image-stats" src={Heart} alt="Heart" />
-                <div className="text-white font-bold  text-3xl xs:text-2xl smd:text-3xl pt-6">{core}</div>
-                <div className="text-white font-semibold text-2xl xs:text-xl smd:text-2xl pt-2">
+                <div className="text-white font-bold  text-2xl  smd:text-3xl pt-6">{core}</div>
+                <div className="text-white font-semibold text-xl  smd:text-2xl pt-2">
                   Core Team Members
                 </div>
               </div>
               <div className="text-center flex flex-col">
                 <img className="image-stats" src={Team} alt="Team" />
-                <div className="text-white font-semibold smd:font-bold text-3xl xs:text-2xl smd:text-3xl pt-6">
+                <div className="text-white font-semibold smd:font-bold text-2xl  smd:text-3xl pt-6">
                   {institute}
                 </div>
-                <div className="text-white font-semibold text-2xl xs:text-xl smd:text-2xl pt-2">
+                <div className="text-white font-semibold text-xl  smd:text-2xl pt-2">
                   Institute Teams
                 </div>
               </div>
               <div className="text-center flex flex-col">
                 <img className="image-stats" src={Temple} alt="Temple" />
 
-                <div className="text-white font-semibold smd:font-bold text-3xl xs:text-2xl smd:text-3xl pt-6">
+                <div className="text-white font-semibold smd:font-bold text-2xl  smd:text-3xl pt-6">
                   {clubs}
                 </div>
-                <div className="text-white font-semibold text-2xl xs:text-xl smd:text-2xl pt-2">
+                <div className="text-white font-semibold text-xl  smd:text-2xl pt-2">
                   Clubs and Societies
                 </div>
               </div>
@@ -67,10 +66,10 @@ const Stats = () => {
                   src={Individual}
                   alt="Individual"
                 />
-                <div className="text-white font-semibold smd:font-bold text-3xl xs:text-2xl smd:text-3xl pt-6">
+                <div className="text-white font-semibold smd:font-bold text-2xl smd:text-3xl pt-6">
                   {events}
                 </div>
-                <div className="text-white font-semibold text-2xl xs:text-xl smd:text-2xl pt-2">
+                <div className="text-white font-semibold text-xl smd:text-2xl pt-2">
                   Events
                 </div>
               </div>
