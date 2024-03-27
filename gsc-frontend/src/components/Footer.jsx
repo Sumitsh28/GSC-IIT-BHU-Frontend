@@ -22,16 +22,16 @@ const Footer = () => {
               <Link to="/sports">Sports</Link>
             </li>
             <li className="hover:text-[#C7684A]">
-              <Link to="/leagues">Leagues</Link>
+              <Link to="/events/Institute-League">Leagues</Link>
             </li>
             {/* <li className="hover:text-[#C7684A]">
               <Link to="/clubs">Clubs and Societies</Link>
             </li> */}
             <li className="hover:text-[#C7684A]">
-              <Link to="/spardha">Spardha</Link>
+              <Link to="/events/Spardha">Spardha</Link>
             </li>
             <li className="hover:text-[#C7684A]">
-              <Link to="/interiit">Inter IIT</Link>
+              <Link to="/events/Inter-IIT">Inter IIT</Link>
             </li>
           </ul>
 
