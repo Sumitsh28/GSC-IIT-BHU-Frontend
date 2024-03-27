@@ -44,6 +44,8 @@ module.exports = withMT({
       'right-bottom-sm': 'right 10rem bottom ',
       'right-bottom': 'right bottom',
       'left-top': 'left top',
+      'left-top-1': 'left 0.5rem top 7rem',
+      'left-top-2': 'left 5rem top 10rem',
       'right-top': 'right top',
       'right-top-2': 'right 13rem top',
       'right-top-3': 'right 5rem top 4rem',

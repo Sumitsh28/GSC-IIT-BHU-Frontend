@@ -33,6 +33,7 @@ const Stats = () => {
   // }, [clubs, core, institute, events, inView]);
 
   useEffect(() => {
+
     let intervalId;
 
     if (inView) {
@@ -54,6 +55,7 @@ const Stats = () => {
         if (core >= a1 && institute >= a2 && clubs >= a3 && events >= a4) {
           clearInterval(intervalId);
         }
+
       }, 100);
     }
 
@@ -70,9 +72,8 @@ const Stats = () => {
               <div className="text-center font-inter flex flex-col">
                 <img className="image-stats" src={Heart} alt="Heart" />
 
-                <div className="text-white font-bold  text-2xl  smd:text-3xl pt-6">
-                  {core}
-                </div>
+                <div className="text-white font-bold  text-2xl  smd:text-3xl pt-6">{core}</div>
+
                 <div className="text-white font-semibold text-xl  smd:text-2xl pt-2">
                   Core Team Members
                 </div>

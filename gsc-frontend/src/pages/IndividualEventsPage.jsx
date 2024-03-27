@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 import Navbar from "../components/Navbar/Navbar";
-import HeroEvents from "../components/Events/HeroEvents";
-import EventCards from "../components/Events/EventCards";
-function Events() {
+import IndividualEventsHero from "../components/IndividualEvents/IndividualEventsHero";
+import IndividualEventsAbout from "../components/IndividualEvents/IndividualEventsAbout";
+function IndividualEventsPage() {
   const [scrolling, setScrolling] = useState(false);
 
   useEffect(() => {
@@ -23,10 +23,10 @@ function Events() {
   return (
     <>
       <Navbar scrolling={scrolling} />
-      <HeroEvents />
-      <EventCards />
+       <IndividualEventsHero />
+       <IndividualEventsAbout />
     </>
   );
 }
 
-export default Events;
+export default IndividualEventsPage;

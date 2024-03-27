@@ -1,6 +1,7 @@
 import Navbar from "../components/Navbar/Navbar";
 import ImageStack from "../components/Image";
 import ContactCard from "../components/ContactCard";
+import image1 from "../images/cricket.svg";
 
 const Cricket = () => {
   return (
@@ -9,7 +10,7 @@ const Cricket = () => {
       <div
         className="h-[530px] lg:h-[704px] md:h-[560px] sm:h-[460px] flex flex-row  justify-center sm:gap-[40px] relative z-[-2]"
         style={{
-          backgroundImage: `url('public/assets/cricket.svg')`,
+          backgroundImage: `url(${image1})`,
           backgroundSize: "cover",
           backgroundPosition: "center",
           width: "100%",
