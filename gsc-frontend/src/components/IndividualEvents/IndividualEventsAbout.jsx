@@ -1,33 +1,28 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React, { useState } from "react";
 
 const IndividualEventsAbout = () => {
+  const tex = "At vero eos et accusamus et iusto odio dignissimos ducimus quiblanditiis praesentium voluptatum deleniti atque corrupti quosdolores et quas molestias excepturi sint occaecati cupiditatenon provident, similique sunt in culpa qui officia deseruntmollitia animi, id est"
+  const [text,setText]=useState([tex,tex])
+  const [show,setShow]=useState(false)
+  const handleClick = () => {
+    setShow(!show)
+    setText(show?[tex,tex]:[tex,tex,tex])
+  }
   return (
-    <div className=" bg-[url('/assets/QuotationTopleft.svg')]   ss:bg-[url('/assets/HomeAboutQuartercircle.svg')]  bg-no-repeat ss:bg-right-bottom bg-[length:235px]  md:bg-[length:302px]">
-    <div className="bg-[url('/assets/HomeAboutCorner.svg')] bg-no-repeat bg-right-bottom bg-[length:235px] md:bg-[length:302px] ">
+    <div className=" bg-[url('/assets/QuotationTopleft.svg')]   ss:bg-[url('/assets/HomeAboutQuartercircle.svg')]  bg-no-repeat ss:bg-right-bottom bg-[length:235px]  md:bg-[length:275px]">
+    <div className="bg-[url('/assets/HomeAboutCorner.svg')] bg-no-repeat bg-right-bottom bg-[length:235px] md:bg-[length:275px] ">
       <div className="ss:bg-[url('/assets/Batsman.svg')] bg-no-repeat bg-left-bottom sm:bg-left-bottom-3 md:bg-left-bottom-2 bg-[length:200px] ">
         <div className="ss:bg-[url('/assets/Cricketball.svg')] bg-no-repeat bg-right-top  md:bg-right-top-3 bg-[length:250px] ">
-            <div className="pt-16 pb-9 pr-6 pl-10 ss:pt-16 ss:pb-36 ss:pl-10 ss:pr-44 md:pl-20 md:pr-80">
+            <div className="pt-16 pb-9 pr-6 pl-10 ss:pt-16 ss:pb-36 ss:pl-10 ss:pr-52 md:pl-20 md:pr-96">
               <div className="font-lexend font-bold ss:font-semibold text-center ss:text-left text-2xl xs:text-3xl  md:font-medium md:text-4xl">Who are We ?</div>
-              <div className="font-lexend pt-10 text-xs xs:text-sm ss:text-md md:pt-12 md:text-lg" >
-                At vero eos et accusamus et iusto odio dignissimos ducimus qui
-                blanditiis praesentium voluptatum deleniti atque corrupti quos
-                dolores et quas molestias excepturi sint occaecati cupiditate
-                non provident, similique sunt in culpa qui officia deserunt
-                mollitia animi, id est
-              </div>
-              <div className="font-lexend pt-6 text-xs xs:text-sm ss:text-md ss:pt-4 pb-4 ss:pb-8  md:text-lg">
-                aborum et dolorum fuga. Et harum quidem rerum facilis est et
-                expedita distinctio. Nam libero tempore, cum soluta nobis est
-                eligendi optio cumque nihil impedit quo minus id quod maxime
-                placeat facere possimus, omnis voluptas assumenda est, omnis
-                dolor repellendus. Temporibus autem quibusdam et aut officiis
-                debitis aut rerum
-              </div>
-            
-              <Link to={'/about'}  className="font-inter text-about-red text-md  md:text-lg" >
-                Read More...
-              </Link>
+              {text.map((tex,index)=>{return(
+                <div key={index} className="font-lexend pt-10 text-xs xs:text-sm ss:text-md md:pt-6 md:text-lg" >
+                {tex}
+              </div>)
+              })}
+              <span onClick={handleClick}  className="font-inter text-about-red text-md pt-5  cursor-pointer md:text-lg" >
+                {show? "Read Less ..":"Read More .."}
+              </span>
               
             </div>
             
