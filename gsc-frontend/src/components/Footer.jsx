@@ -62,11 +62,11 @@ const Footer = () => {
             </li>
             <li className="flex flex-row gap-2 items-center">
               <FaPhoneAlt />
-              +91 1234567890
+              +91 9373520743
             </li>
             <li className="flex flex-row gap-2 items-center">
               <MdAlternateEmail />
-              xyz@gamil.com
+              tusharpratap0306@gmail.com
             </li>
           </ul>
           <ul className="flex lg:flex-col text-3xl lg:mt-10 gap-4 flex-row justify-center mt-[1.5rem] pb-[0.5rem]">
