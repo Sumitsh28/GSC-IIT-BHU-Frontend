@@ -14,7 +14,7 @@ const Badminton = () => {
     <div className="bg-[#B9B9B9]">
       <Navbar />
       <div style={{ position: "relative", zIndex: "1" }}>
-        <CricketHero />
+        <CricketHero sports_name="Badminton" />
       </div>
 
       <div>
@@ -143,7 +143,7 @@ const Badminton = () => {
           <ContactCard />
         </div>
         <div className="flex flex-col items-center lg:hidden">
-          <ContactCard image="/assets/Aquatics/Aquatics2.jpeg"/>
+          <ContactCard image="/assets/Aquatics/Aquatics2.jpeg" />
           <ContactCard />
           <ContactCard />
         </div>
