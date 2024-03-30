@@ -11,14 +11,14 @@ const HomeAbout = () => {
               <div className="font-lexend font-bold ss:font-semibold text-center ss:text-left text-3xl  md:font-medium md:text-4xl">
                 ABOUT
               </div>
-              <div className="font-lexend pt-10 text-sm ss:text-md md:pt-12 md:text-lg">
+              <div className="font-lexend-exa pt-10 text-sm ss:text-md md:pt-12 md:text-[1.25rem] md:leading-7">
                 The Games & Sports Council ignites a passion for athletics
                 within the Institute, fostering a vibrant sports culture where
                 everyone can thrive. This spirit extends to all members of the
                 community, students, faculty, and staff alike, inviting them to
                 experience the joy of their chosen games.
               </div>
-              <div className="font-lexend pt-6 text-sm ss:text-md ss:pt-4 pb-4 ss:pb-8  md:text-lg">
+              <div className="font-lexend-exa pt-6 text-sm ss:text-md ss:pt-4 pb-4 ss:pb-8  md:text-[1.25rem] md:leading-7">
                 The Council aspires to weave sports into the very fabric of
                 daily life. Throughout the year, a tapestry of activities
                 unfolds, igniting friendly competition amongst those who share a
