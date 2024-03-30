@@ -10,6 +10,12 @@ import Contact from "./pages/Contact";
 import Cricket from "./pages/Cricket";
 import IndividualEventsPage from "./pages/IndividualEventsPage";
 import Aquatics from "./pages/Aquatics";
+import Badminton from "./pages/Badminton";
+import Basketball from "./pages/Basketball";
+import Football from "./pages/Football";
+import Hockey from "./pages/Hockey";
+import Squash from "./pages/Squash";
+import Volleyball from "./pages/Volleyball";
 
 function App() {
   return (
@@ -23,8 +29,15 @@ function App() {
           <Route path="/events/:event" element={<IndividualEventsPage />} />
           <Route path="/sports" element={<Sports />} />
           <Route path="/contacts" element={<Contact />} />
-          <Route path="/cricket" element={<Cricket/>}/>
-          <Route path="/aquatics" element={<Aquatics/>}/>
+          <Route path="/cricket" element={<Cricket />} />
+          <Route path="/aquatics" element={<Aquatics />} />
+          <Route path="/atheletics" element={<Aquatics />} />
+          <Route path="/badminton" element={<Badminton />} />
+          <Route path="/basketball" element={<Basketball />} />
+          <Route path="/football" element={<Football />} />
+          <Route path="/hockey" element={<Hockey />} />
+          <Route path="/squash" element={<Squash />} />
+          <Route path="/volleyball" element={<Volleyball />} />
         </Routes>
 
         <Footer />
