@@ -15,7 +15,7 @@ function ContactCard(props) {
        
         <div className="c-card-content ">
             <div className="flex flex-col  items-center justify-center  text-black sm:mb-[25px] mb-[20px]">
-                <img src={ContactPageFrame} className="h-[120px] mb-[30px] sm:mb-[20px] sm:h-[180px] md:h-[200px]"></img>
+                <img src={props.image} className="h-[120px] mb-[30px] sm:mb-[20px] sm:h-[180px] md:h-[200px]"></img>
                 <h2 className="font-bold md:text-[50px] sm:text-[40px] text-[25px] ">John Tarly</h2>
                 <h3 className="sm:text-[24px] md:text-[30px] text-[18px]">CEO-Founder</h3>
             </div>

@@ -9,6 +9,7 @@ import Sports from "./pages/Sports";
 import Contact from "./pages/Contact";
 import Cricket from "./pages/Cricket";
 import IndividualEventsPage from "./pages/IndividualEventsPage";
+import Aquatics from "./pages/Aquatics";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
           <Route path="/sports" element={<Sports />} />
           <Route path="/contacts" element={<Contact />} />
           <Route path="/cricket" element={<Cricket/>}/>
+          <Route path="/aquatics" element={<Aquatics/>}/>
         </Routes>
 
         <Footer />
