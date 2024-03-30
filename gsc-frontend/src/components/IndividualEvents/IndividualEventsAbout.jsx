@@ -16,7 +16,7 @@ const IndividualEventsAbout = () => {
             <div className="pt-16 pb-9 pr-6 pl-10 ss:pt-16 ss:pb-36 ss:pl-10 ss:pr-52 md:pl-20 md:pr-96">
               <div className="font-lexend font-bold ss:font-semibold text-center ss:text-left text-2xl xs:text-3xl  md:font-medium md:text-4xl">Who are We ?</div>
               {text.map((tex,index)=>{return(
-                <div key={index} className="font-lexend pt-10 text-xs xs:text-sm ss:text-md md:pt-6 md:text-lg" >
+                <div key={index} className="font-lexend-exa  pt-10 text-[0.85rem] md:text-[1.3rem] ss:text-md md:pt-6 md:text-lg" >
                 {tex}
               </div>)
               })}
