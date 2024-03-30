@@ -11,12 +11,13 @@ const events = ['Institute-League', 'Inter-Hostel', 'Inter-IIT', 'Outfest', 'Spa
 const HeroEvents = () => {
   return (
      <>  
-         <div className="grid grid-cols-2 ss:grid-cols-3 gap-10 m-4 smd:m-6">
+         <div className="grid grid-cols-2 ss:grid-cols-3 gap-10 bg-[url('/assets/EventsGroupBackground.png')] bg-no-repeat bg-cover bg-center p-4 smd:p-6">
             {images.map((image, index) => {
                   return ( 
-                    <div className="')]">
+                    <div className=" bg-no-repeat bg-cover bg-center">
                     <Link to={`/events/${events[index]}`} >
                     <img className='mx-auto' key={index} src={image} alt="image" />
+                     
                     </Link>
                     </div>
 ) 
