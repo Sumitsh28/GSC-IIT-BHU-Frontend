@@ -35,7 +35,7 @@ const AboutPageSection1 = () => {
             </p>
           </div>
           <div className="pr-[165px] pb-[24px]">
-            <p className="font-lexend-exa text-[22px] text-[#000000]">
+            <p className="font-lexend-exa text-[22px] text-[#000000] mb-5">
             
             The Games and Sports Council of IIT BHU cultivates a vibrant sports culture, 
             inviting every member of our community to embrace their passion for athletics. 
