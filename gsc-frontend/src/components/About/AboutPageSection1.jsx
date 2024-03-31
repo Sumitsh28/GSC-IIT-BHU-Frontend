@@ -10,7 +10,7 @@ const AboutPageSection1 = () => {
           alt="Semicircle"
         />
         {/* image-div start*/}
-        <div className="mx-auto my-auto">
+        <div className="mx-auto my-auto float-left">
           <img
             src="/assets/IITBHUSportsLogo2.png"
             className="h-[350px]"
@@ -34,6 +34,7 @@ const AboutPageSection1 = () => {
               IIT BHU campus. The Games and Sports Council is responsible for
               administrating, regulating, and promoting games and sports
               activities around the IIT BHU campus.
+              
             </p>
           </div>
         </div>
