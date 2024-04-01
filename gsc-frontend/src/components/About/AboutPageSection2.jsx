@@ -71,12 +71,12 @@ const AboutPageSection2 = () => {
 
         {/* Subtext to display */}
         {showSubtext1 && (
-          <p className="font-lexend text-[9px] lg:text-[15px] text-[#FFFFFF] px-[50px] text-center pb-[12px]">
+          <p className="font-inter text-[11px] lg:text-[15px] text-[#FFFFFF] px-[50px] text-center pb-[12px]">
             We envision a dynamic and inclusive community where every individual is inspired to embrace the spirit of sportsmanship, excellence, and holistic development. Our vision is built upon the pillars of passion, integrity, and teamwork, aiming to foster a culture where both physical and mental well-being thrive.
           </p>
         )}
 
-        <p className="font-lexend text-[13px] lg:text-[15px] text-[#FFFFFF] px-[50px] text-center pb-[50px] hidden sm:block">
+        <p className="font-inter text-[15px] lg:text-[17px] text-[#FFFFFF] px-[50px] text-center pb-[50px] hidden sm:block">
          We envision a dynamic and inclusive community where every individual is inspired to embrace the spirit of sportsmanship, excellence, and holistic development. Our vision is built upon the pillars of passion, integrity, and teamwork, aiming to foster a culture where both physical and mental well-being thrive.
         </p>
       </div>
@@ -105,11 +105,11 @@ const AboutPageSection2 = () => {
         </div>
         {/* Subtext to display */}
         {showSubtext2 && (
-          <p className="font-lexend text-[9px] lg:text-[15px] text-[#FFFFFF] px-[50px] text-center pb-[12px]">
+          <p className="font-inter text-[11px] lg:text-[15px] text-[#FFFFFF] px-[50px] text-center pb-[12px]">
             Our commitment lies in nurturing a culture of physical activity, sportsmanship, and holistic growth across our campus. We aim to ignite and empower individuals in their pursuit of games and sports, championing inclusivity, excellence, and well-being as integral values that enrich our community.
           </p>
         )}
-        <p className="font-lexend text-[13px] lg:text-[15px] text-[#FFFFFF] px-[50px] text-center pb-[50px] hidden sm:block">
+        <p className="font-inter text-[15px] lg:text-[17px] text-[#FFFFFF] px-[50px] text-center pb-[50px] hidden sm:block">
         Our commitment lies in nurturing a culture of physical activity, sportsmanship, and holistic growth across our campus. We aim to ignite and empower individuals in their pursuit of games and sports, championing inclusivity, excellence, and well-being as integral values that enrich our community.
         </p>
       </div>
@@ -138,11 +138,11 @@ const AboutPageSection2 = () => {
         </div>
         {/* Subtext to display */}
         {showSubtext3 && (
-          <p className="font-lexend text-[9px] lg:text-[15px] text-[#FFFFFF] px-[50px] text-center pb-[12px]">
+          <p className="font-inter text-[11px] lg:text-[15px] text-[#FFFFFF] px-[50px] text-center pb-[12px]">
             Our collective spirit resonates with a profound passion for games and sports, recognizing their transformative ability to inspire and unite our campus community. Fueled by our love for competition, camaraderie, and personal development, we strive to cultivate an enriching sports culture for all participants.
           </p>
         )}
-        <p className="font-lexend text-[13px] lg:text-[15px] text-[#FFFFFF] px-[50px] text-center pb-[50px] hidden sm:block">
+        <p className="font-inter text-[15px] lg:text-[17px] text-[#FFFFFF] px-[50px] text-center pb-[50px] hidden sm:block">
         Our collective spirit resonates with a profound passion for games and sports, recognizing their transformative ability to inspire and unite our campus community. Fueled by our love for competition, camaraderie, and personal development, we strive to cultivate an enriching sports culture for all participants.
         </p>
       </div>
