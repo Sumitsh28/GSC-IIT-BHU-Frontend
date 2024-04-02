@@ -15,12 +15,12 @@ const ImageCarousel = ({ images, autoSlideInterval = 3000 }) => {
   }, [autoSlideInterval, images.length]);
 
   return (
-    <div className="absolute z-10 lg:hidden mt-[-34px]">
-      <div className="h-[200px] w-[150px] bg-[#F4F4F4] border-8 border-[#A2A2A2] rounded-xl items-center flex justify-center">
+    <div className="absolute z-10 mt-16 sm:hidden">
+      <div className="h-[300px] w-[250px] sm:h-[500px] sm:w-[450px] bg-[#F4F4F4] border-8 border-[#A2A2A2] rounded-xl items-center flex justify-center">
         <img
           src={images[currentImageIndex]}
           alt="carousel"
-          className="h-[200px] w-[150px]"
+          className="h-[250px] w-[250px]"
         />
       </div>
     </div>
