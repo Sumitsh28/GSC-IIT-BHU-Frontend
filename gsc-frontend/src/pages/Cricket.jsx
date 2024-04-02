@@ -2,12 +2,13 @@ import Navbar from "../components/Navbar/Navbar";
 import achieve from "../images/achieve.svg";
 import ContactCard from "../components/ContactCard";
 import CricketHero from "../components/CricketHero";
-import image1 from "../images/cricket.svg";
+import Slider_New from "../components/Slider/3dslider";
 import ImageCarousel from "../components/CarouselSports";
+import image1 from "../images/cricket.svg";
+import image2 from "../images/1.jpeg";
 
 const Cricket = () => {
-  const images = [`${image1}`, `${image1}`, `${image1}`];
-
+  const images = [`${image1}`, `${image2}`, `${image1}`];
   return (
     <div className="bg-[#B9B9B9]">
       <Navbar />
@@ -84,45 +85,13 @@ const Cricket = () => {
         </div>
       </div>
 
-      <div className="mt-10 mb-10">
+      <div className="mt-10 mb-32">
         <div className="bg-[#B9B9B9] flex flex-col items-center justify-center gap-10">
           <p className="w-auto sm:text-[100px] text-[30px] text-white opacity-50 font-bold font-lexend text-center tracking-wide absolute z-10 mb-[330px] sm:mt-0 mt-20">
             Achievements
           </p>
 
-          <div className="absolute z-10 items-center justify-center mt-40 hidden lg:block">
-            <div className="flex flex-row gap-11 mb-16 items-center justify-center">
-              <div className="h-[360px] w-[296px] bg-[#F4F4F4] border-8 border-[#A2A2A2] rounded-xl relative">
-                {/* <img
-        src=""
-        className="h-[397px] border-4 border-[#A2A2A2] absolute top-0 left-0"
-        alt="GSC_Logo"
-      /> */}
-              </div>
-              <div className="h-[360px] w-[296px] bg-[#F4F4F4] border-8 border-[#A2A2A2] rounded-xl relative">
-                {/* <img
-        src=""
-        className="h-[397px] border-4 border-[#A2A2A2] absolute top-0 left-0"
-        alt="GSC_Logo"
-      /> */}
-              </div>
-              <div className="h-[360px] w-[296px] bg-[#F4F4F4] border-8 border-[#A2A2A2] rounded-xl relative">
-                {/* <img
-        src=""
-        className="h-[397px] border-4 border-[#A2A2A2] absolute top-0 left-0"
-        alt="GSC_Logo"
-      /> */}
-              </div>
-              <div className="h-[360px] w-[296px] bg-[#F4F4F4] border-8 border-[#A2A2A2] rounded-xl relative">
-                {/* <img
-        src=""
-        className="h-[397px] border-4 border-[#A2A2A2] absolute top-0 left-0"
-        alt="GSC_Logo"
-      /> */}
-              </div>
-            </div>
-          </div>
-
+          <Slider_New />
           <ImageCarousel images={images} />
           <img src={achieve} className="relative z-1" />
         </div>
