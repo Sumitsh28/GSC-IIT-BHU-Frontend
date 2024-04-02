@@ -16,6 +16,7 @@ import Football from "./pages/Football";
 import Hockey from "./pages/Hockey";
 import Squash from "./pages/Squash";
 import Volleyball from "./pages/Volleyball";
+import Atheletics from "./pages/Atheletics";
 
 function App() {
   return (
@@ -31,7 +32,7 @@ function App() {
           <Route path="/contacts" element={<Contact />} />
           <Route path="/cricket" element={<Cricket />} />
           <Route path="/aquatics" element={<Aquatics />} />
-          <Route path="/atheletics" element={<Aquatics />} />
+          <Route path="/atheletics" element={<Atheletics />} />
           <Route path="/badminton" element={<Badminton />} />
           <Route path="/basketball" element={<Basketball />} />
           <Route path="/football" element={<Football />} />

@@ -2,7 +2,7 @@ import image1 from "../images/cricket.svg";
 import pattern1 from "../images/pattern1.svg";
 import pattern2 from "../images/pattern2.svg";
 
-function CricketHero() {
+function CricketHero(props) {
   return (
     <div>
       {/* Desktop */}
@@ -18,7 +18,7 @@ function CricketHero() {
       >
         <div className=" sm:flex flex-col lg:mt-[90px] md:mt-[120px] sm:mt-[100px] items-center gap-[15rem]">
           <p className=" lg:text-[100px] md:text-[40.5px] sm:text-[25.5px] text-white font-bold font-lexend tracking-tight text-center mt-24">
-            Cricket
+            {props.sports_name}
           </p>
           <div className="relative bg-[#6690B8] p-4 w-[1200px] h-[600px] font-lexend text-center mt-20 ">
             <img

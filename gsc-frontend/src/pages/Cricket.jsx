@@ -12,7 +12,7 @@ const Cricket = () => {
     <div className="bg-[#B9B9B9]">
       <Navbar />
       <div style={{ position: "relative", zIndex: "1" }}>
-        <CricketHero />
+        <CricketHero sports_name="Cricket" />
       </div>
 
       <div>
