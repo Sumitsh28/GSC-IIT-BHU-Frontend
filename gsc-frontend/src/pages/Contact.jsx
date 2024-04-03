@@ -2,128 +2,39 @@ import React, { useEffect, useState } from "react";
 import Navbar from "../components/Navbar/Navbar";
 import ContactCard from "../components/ContactCard.jsx";
 import cricket from "../assets/cricket.png"
+import parikshitImage from "../assets/Contact/Parikshit.jpeg"
+import tusharImage from "../assets/Contact/Tushar.jpg"
 
 function Contact() {
   const [scrolling, setScrolling] = useState(false);
 
   const data = [
     {
-      name: "Cricket",
-      imageUrl: cricket,
+      name: "Parikshit Patil",
+      position:"Joint General Secretary",
+      imageUrl: parikshitImage,
       email: "john.doe@example.com",
-      instagram: "john_doe_instagram",
+      instagram: "www.instagram.com/1_parikshit/",
       linkedin: "john_doe_linkedin",
       twitter:"twitter",
       facebook:"facebook"
-    },{
-      name: "Cricket",
+    },
+    {
+      name: "Anshpreet Bal",
+      position:"Joint General Secretary",
       imageUrl: cricket,
       email: "john.doe@example.com",
-      instagram: "john_doe_instagram",
+      instagram: "www.instagram.com/ansh_bal",
       linkedin: "john_doe_linkedin",
       twitter:"twitter",
       facebook:"facebook"
-    },{
-      name: "Cricket",
-      imageUrl: cricket,
+    },
+    {
+      name: "Tushar Singh",
+      position:"Joint General Secretary",
+      imageUrl: tusharImage,
       email: "john.doe@example.com",
-      instagram: "john_doe_instagram",
-      linkedin: "john_doe_linkedin",
-      twitter:"twitter",
-      facebook:"facebook"
-    },{
-      name: "Cricket",
-      imageUrl: cricket,
-      email: "john.doe@example.com",
-      instagram: "john_doe_instagram",
-      linkedin: "john_doe_linkedin",
-      twitter:"twitter",
-      facebook:"facebook"
-    },{
-      name: "Cricket",
-      imageUrl: cricket,
-      email: "john.doe@example.com",
-      instagram: "john_doe_instagram",
-      linkedin: "john_doe_linkedin",
-      twitter:"twitter",
-      facebook:"facebook"
-    },{
-      name: "Cricket",
-      imageUrl: cricket,
-      email: "john.doe@example.com",
-      instagram: "john_doe_instagram",
-      linkedin: "john_doe_linkedin",
-      twitter:"twitter",
-      facebook:"facebook"
-    },{
-      name: "Cricket",
-      imageUrl: cricket,
-      email: "john.doe@example.com",
-      instagram: "john_doe_instagram",
-      linkedin: "john_doe_linkedin",
-      twitter:"twitter",
-      facebook:"facebook"
-    },{
-      name: "Cricket",
-      imageUrl: cricket,
-      email: "john.doe@example.com",
-      instagram: "john_doe_instagram",
-      linkedin: "john_doe_linkedin",
-      twitter:"twitter",
-      facebook:"facebook"
-    },{
-      name: "Cricket",
-      imageUrl: cricket,
-      email: "john.doe@example.com",
-      instagram: "john_doe_instagram",
-      linkedin: "john_doe_linkedin",
-      twitter:"twitter",
-      facebook:"facebook"
-    },{
-      name: "Cricket",
-      imageUrl: cricket,
-      email: "john.doe@example.com",
-      instagram: "john_doe_instagram",
-      linkedin: "john_doe_linkedin",
-      twitter:"twitter",
-      facebook:"facebook"
-    },{
-      name: "Cricket",
-      imageUrl: cricket,
-      email: "john.doe@example.com",
-      instagram: "john_doe_instagram",
-      linkedin: "john_doe_linkedin",
-      twitter:"twitter",
-      facebook:"facebook"
-    },{
-      name: "Cricket",
-      imageUrl: cricket,
-      email: "john.doe@example.com",
-      instagram: "john_doe_instagram",
-      linkedin: "john_doe_linkedin",
-      twitter:"twitter",
-      facebook:"facebook"
-    },{
-      name: "Cricket",
-      imageUrl: cricket,
-      email: "john.doe@example.com",
-      instagram: "john_doe_instagram",
-      linkedin: "john_doe_linkedin",
-      twitter:"twitter",
-      facebook:"facebook"
-    },{
-      name: "Cricket",
-      imageUrl: cricket,
-      email: "john.doe@example.com",
-      instagram: "john_doe_instagram",
-      linkedin: "john_doe_linkedin",
-      twitter:"twitter",
-      facebook:"facebook"
-    },{
-      name: "Cricket",
-      imageUrl: cricket,
-      email: "john.doe@example.com",
-      instagram: "john_doe_instagram",
+      instagram: "www.instagram.com/prataptushar19",
       linkedin: "john_doe_linkedin",
       twitter:"twitter",
       facebook:"facebook"
@@ -191,7 +102,16 @@ function Contact() {
     
      </div>
      <div>
-    <ContactCard></ContactCard>
+    <ContactCard
+      name="Sunil Verma"
+      position="General Secretary"
+      image={cricket}
+      // gmail=""
+      instagram="www.instagram.com/sunil_verma1610"
+      // linkedin=""
+      // facebook=""
+      // twitter=""
+    />
      </div>
      <div className="hidden lg:flex w-[250px] h-[470px] bg-transparent">
     
@@ -200,6 +120,7 @@ function Contact() {
       <div>
         <ContactCard
           name={member.name}
+          position={member.position}
           image={member.imageUrl}
           gmail={member.email}
           instagram={member.instagram}
