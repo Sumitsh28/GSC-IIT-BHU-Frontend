@@ -4,6 +4,9 @@ import ContactCard from "../components/ContactCard.jsx";
 import cricket from "../assets/cricket.png"
 import parikshitImage from "../assets/Contact/Parikshit.jpeg"
 import tusharImage from "../assets/Contact/Tushar.jpg"
+import sunilImage from "../assets/Contact/Sunil.jpg"
+import anshImage from "../assets/Contact/Anshpreet.jpg"
+
 
 function Contact() {
   const [scrolling, setScrolling] = useState(false);
@@ -22,7 +25,7 @@ function Contact() {
     {
       name: "Anshpreet Bal",
       position:"Joint General Secretary",
-      imageUrl: cricket,
+      imageUrl: anshImage,
       email: "john.doe@example.com",
       instagram: "www.instagram.com/ansh_bal",
       linkedin: "john_doe_linkedin",
@@ -105,7 +108,7 @@ function Contact() {
     <ContactCard
       name="Sunil Verma"
       position="General Secretary"
-      image={cricket}
+      image={sunilImage}
       // gmail=""
       instagram="www.instagram.com/sunil_verma1610"
       // linkedin=""
