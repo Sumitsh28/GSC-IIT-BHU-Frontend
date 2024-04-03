@@ -3,24 +3,14 @@ import { Carousel, IconButton } from "@material-tailwind/react";
 const Quotation = () => {
   const Quote = [
     {
-      quote:
-        "IITBHU sports is a community of sports enthusiasts who are maintaining their fitness even in these tough times.",
-      person: "Person",
+      quote: "You were born to be a player. You were meant to be here. This moment is yours.",
+      person: "Sunil Verma",
+      position: "General Secretary, Games & Sports Council",
     },
     {
-      quote:
-        "IITBHU sports is a community of sports enthusiasts who are maintaining their fitness even in these tough times.",
-      person: "Person",
-    },
-    {
-      quote:
-        "IITBHU sports is a community of sports enthusiasts who are maintaining their fitness even in these tough times.",
-      person: "Person",
-    },
-    {
-      quote:
-        "IITBHU sports is a community of sports enthusiasts who are maintaining their fitness even in these tough times.",
-      person: "Person",
+      quote: "You win hearts or a game! If you are a sports enthusiast Sports Council is a right place for you. Let's play for wellbeing. Come together and join hands, be the part of one of the biggest Sports family. Bharat Mata ki Jai!",
+      person: "Surya Deo Yadav",
+      position: "Counsellor, Games & Sports Council",
     },
   ];
   return (
@@ -34,7 +24,7 @@ const Quotation = () => {
                 loop={true}
                 navigation={false}
                 autoplay={true}
-                autoplaySpeed={3000}
+                autoplaySpeed={4000}
                 prevArrow={({ handlePrev }) => (
                   <IconButton
                     variant="text"
@@ -87,13 +77,16 @@ const Quotation = () => {
                 {Quote.map((quote, index) => (
                   <div key={index}>
                     <div className="text-center font-inter pt-12 pb-8 pl-12 pr-12 sm:pl-40 sm:pr-40 sm:pt-36 sm:pb-32">
-                      <div className="text-white font-medium sm:font-semibold text-xl sm:text-3xl pt-6">
+                      <div className="text-white font-bold sm:font-semibold text-xl sm:text-3xl pt-6">
                         {quote.quote}
                       </div>{" "}
-                      <div className="text-white font-medium sm:font-semibold text-md sm:text-lg pt-6 sm:pt-10">
+                      <div className="text-white font-semibold sm:font-semibold text-md sm:text-lg pt-8 sm:pt-10">
                         {quote.person}
                       </div>
-                      <div className="text-white font-bold text-3xl sm sm:text-2xl pt-2 sm:pt-4">
+                      <div className="text-white font-semibold sm:font-semibold text-md sm:text-lg">
+                        {quote.position}
+                      </div>
+                      <div className="text-white font-medium text-3xl sm sm:text-2xl pt-2 sm:pt-4">
                         ---
                       </div>
                     </div>
