@@ -33,7 +33,7 @@ const AboutGallery = () => {
               <div className="font-lexend-zetta relative sm:top-[-24px] font-extrabold text-gray-300 text-[70px] sm:text-[188px] flex items-center justify-center">
                 <p>Gallery</p>
               </div>
-              <div className="relative sm:top-[-107px] container pl-[194px] hidden sm:block">
+              <div className="relative sm:top-[-107px] mx-[194px] hidden sm:block">
                 <div className="flex justify-center">
                   {renderImages().slice(0, 3)}
                 </div>
