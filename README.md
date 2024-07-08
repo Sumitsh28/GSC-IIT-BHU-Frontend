@@ -8,4 +8,4 @@ This repository serves as the central hub for all the code, assets, and document
 
 ## Purpose
 
-The primary purpose of this repository is to facilitate collaboration among developers and designers involved in the maintenance and enhancement of the Games and Sports Council website. By centralizing our efforts here, we aim to ensure consistency, reliability, and efficiency in managing the website's codebase and content.
+The primary purpose of this repository is to facilitate collaboration among developers and designers involved in the maintenance and enhancement of the Games and Sports Council website. By centralizing our efforts here, we aim to ensure consistency, reliability, and efficiency in managing the website's codebase and the content.
