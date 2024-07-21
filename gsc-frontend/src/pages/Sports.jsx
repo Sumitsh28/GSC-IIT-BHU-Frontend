@@ -2,13 +2,15 @@ import React, { useEffect, useState } from "react";
 import Navbar from "../components/Navbar/Navbar";
 import TeamCard from "../components/TeamCard";
 import cricket from "../assets/cricket.png";
+import aquatics from "/assets/Aquatics/Aquatics8.jpg"
+import atheletics from "/assets/Atheletics/Atheletics4.jpg"
 import { Link } from "react-router-dom";
 function Sports() {
   const [scrolling, setScrolling] = useState(false);
   const data = [
     {
-      name: "Cricket",
-      imageUrl: cricket,
+      name: "Aquatics",
+      imageUrl: aquatics,
       email: "john.doe@example.com",
       instagram: "john_doe_instagram",
       linkedin: "john_doe_linkedin",
@@ -16,8 +18,8 @@ function Sports() {
       facebook: "facebook",
     },
     {
-      name: "Cricket",
-      imageUrl: cricket,
+      name: "Atheletics",
+      imageUrl: atheletics,
       email: "john.doe@example.com",
       instagram: "john_doe_instagram",
       linkedin: "john_doe_linkedin",
@@ -183,7 +185,7 @@ function Sports() {
         </div>
         <div className="flex items-center flex-wrap justify-center sm:gap-20 pt-36 sm:pt-52 md:pt-64 pb-20 px-10">
           {data.map((member) => (
-            <Link to="/cricket">
+            <Link to={`/${(member.name).toLowerCase()}`}>
               <TeamCard
                 name={member.name}
                 image={member.imageUrl}

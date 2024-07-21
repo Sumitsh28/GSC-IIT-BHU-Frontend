@@ -17,7 +17,7 @@ import slide_image_2 from "../../images/1.jpeg";
 
 import "./3dslider.css";
 
-function Slider_New() {
+function Slider_New(props) {
   return (
     <div className="container absolute hidden lg:block">
       <Swiper
@@ -46,7 +46,20 @@ function Slider_New() {
         modules={[EffectCoverflow, Pagination, Navigation, Autoplay]}
         className="swiper_container"
       >
-        <SwiperSlide>
+        {
+          props.images ? (
+            (props.images).map((img, id)=>{
+              return (<SwiperSlide key={id}>
+              <img
+                src={img}
+                alt="slide_image"
+                className="border-8 border-[#A2A2A2]"
+              />
+            </SwiperSlide>)
+            })
+          ) : 
+          (<div>
+          <SwiperSlide>
           <img
             src={slide_image_1}
             alt="slide_image"
@@ -67,6 +80,10 @@ function Slider_New() {
             className="border-8 border-[#A2A2A2]"
           />
         </SwiperSlide>
+        </div>
+        )
+        }
+
       </Swiper>
     </div>
   );

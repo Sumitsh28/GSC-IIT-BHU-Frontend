@@ -9,7 +9,7 @@ import { FaXTwitter } from "react-icons/fa6";
 function TeamCard(props) {
   // console.log(props.image);
   return (
-    <div className="cardbox" style={{ backgroundImage: `url(${props.image})` }}>
+    <div className="cardbox" style={{ backgroundImage: `url(${props.image})`, backgroundPosition : "center"}}>
       <div className="blackbox ">
         <h2 className="card-title font-inter">{props.name}</h2>
         <div className="card-content">
