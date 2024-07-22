@@ -92,37 +92,19 @@ const Atheletics = () => {
           <p className="w-auto sm:text-[100px] text-[30px] text-white opacity-50 font-bold font-lexend text-center tracking-wide absolute z-10 mb-[330px] sm:mt-0 mt-20">
             Achievements
           </p>
-
           <div className="absolute z-10 items-center justify-center mt-40 hidden lg:block">
             <div className="flex flex-row gap-11 mb-16 items-center justify-center">
-              <div className="h-[360px] w-[296px] bg-[#F4F4F4] border-8 border-[#A2A2A2] rounded-xl relative">
-                <img
-                  src="/assets/Atheletics/Atheletics2.jpeg"
-                  className="h-[344px] border-4 border-[#A2A2A2] absolute top-0 left-0"
-                  alt="GSC_Logo"
-                />
-              </div>
-              <div className="h-[360px] w-[296px] bg-[#F4F4F4] border-8 border-[#A2A2A2] rounded-xl relative">
-                {/* <img
-                  src="/assets/Aquatics/Aquatics4.jpeg"
-                  className="h-[344px] border-4 border-[#A2A2A2] absolute top-0 left-0"
-                  alt="GSC_Logo"
-                /> */}
-              </div>
-              <div className="h-[360px] w-[296px] bg-[#F4F4F4] border-8 border-[#A2A2A2] rounded-xl relative">
-                {/* <img
-                  src="/assets/Aquatics/Aquatics5.jpeg"
-                  className="h-[344px] border-4 border-[#A2A2A2] absolute top-0 left-0"
-                  alt="GSC_Logo"
-                /> */}
-              </div>
-              <div className="h-[360px] w-[296px] bg-[#F4F4F4] border-8 border-[#A2A2A2] rounded-xl relative">
-                {/* <img
-                  src=""
-                  className="h-[344px] border-4 border-[#A2A2A2] absolute top-0 left-0"
-                  //   alt="GSC_Logo"
-                /> */}
-              </div>
+              {
+                images.map((img)=>{
+                  return (<div className="h-[360px] w-[296px] bg-[#F4F4F4] border-8 border-[#A2A2A2] rounded-xl relative">
+                    <img
+                      src={img}
+                      className="h-[344px] border-4 border-[#A2A2A2] absolute top-0 left-0"
+                      alt="GSC_Logo"
+                    />
+                  </div>)
+                })
+              }
             </div>
           </div>
 
@@ -138,14 +120,16 @@ const Atheletics = () => {
           </p>
         </div>
         <div className="sm:flex flex-row items-center gap-28 hidden">
-          <ContactCard />
-          <ContactCard />
-          <ContactCard />
+          <ContactCard image="/assets/Atheletics/Shivpratap.jpeg" position="Coach" name="Shiv Pratap" />
+          <ContactCard image="/assets/Atheletics/AnchalDhar.jpeg" position="Captain" name="Anchal Dhar" />
+          <ContactCard image="/assets/Atheletics/KiranKumar.jpeg" position="Captain" name="Kiran Kumar" />
+          <ContactCard image="/assets/Atheletics/ShubhamSingh.jpeg" position="Coach" name="Subham Singh" />
         </div>
         <div className="flex flex-col items-center lg:hidden">
-          <ContactCard />
-          <ContactCard />
-          <ContactCard />
+        <ContactCard image="/assets/Atheletics/Shivpratap.jpeg" position="Coach" name="Shiv Pratap" />
+          <ContactCard image="/assets/Atheletics/AnchalDhar.jpeg" position="Captain" name="Anchal Dhar" />
+          <ContactCard image="/assets/Atheletics/KiranKumar.jpeg" position="Captain" name="Kiran Kumar" />
+          <ContactCard image="/assets/Atheletics/ShubhamSingh.jpeg" position="Coach" name="Subham Singh" />
         </div>
       </div>
     </div>

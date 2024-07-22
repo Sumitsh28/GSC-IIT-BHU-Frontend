@@ -46,11 +46,11 @@ const Aquatics = () => {
                 />
               </div>
               <div className="h-[360px] w-[296px] bg-[#F4F4F4] border-8 border-[#A2A2A2] rounded-xl relative">
-                {/* <img
-        src=""
-        className="h-[397px] border-4 border-[#A2A2A2] absolute top-0 left-0"
-        alt="GSC_Logo"
-      /> */}
+                <img
+                src="/assets/Aquatics/Aquatics7.jpeg"
+                className="h-[344px] border-4 border-[#A2A2A2] absolute top-0 left-0 overflow-hidden"
+                alt="GSC_Logo"
+              />
               </div>
             </div>
           </div>
@@ -117,11 +117,11 @@ const Aquatics = () => {
                 />
               </div>
               <div className="h-[360px] w-[296px] bg-[#F4F4F4] border-8 border-[#A2A2A2] rounded-xl relative">
-                {/* <img
-                  src=""
+                <img
+                  src="/assets/Aquatics/Aquatics3.jpeg"
                   className="h-[344px] border-4 border-[#A2A2A2] absolute top-0 left-0"
                   //   alt="GSC_Logo"
-                /> */}
+                />
               </div>
             </div>
           </div>
@@ -138,14 +138,14 @@ const Aquatics = () => {
           </p>
         </div>
         <div className="sm:flex flex-row items-center gap-28 hidden">
-          <ContactCard image="/assets/Aquatics/Aquatics2.jpeg" />
-          <ContactCard />
-          <ContactCard />
+          <ContactCard name="Mr. Gokul" position="Coach" image="/assets/Aquatics/Aquatics1.jpeg" />
+          <ContactCard name="Raghvansh" position="Captain" image="/assets/Aquatics/RaghavanshSingla.jpeg"/>
+          <ContactCard name="Bisesh" position="Vice captain" image="/assets/Aquatics/BiseshAgarwal.jpeg"/>
         </div>
         <div className="flex flex-col items-center lg:hidden">
-          <ContactCard image="/assets/Aquatics/Aquatics2.jpeg" />
-          <ContactCard />
-          <ContactCard />
+        <ContactCard name="Mr. Gokul" position="Coach" image="/assets/Aquatics/Aquatics1.jpeg" />
+          <ContactCard name="Raghvansh" position="Captain" image="/assets/Aquatics/RaghavanshSingla.jpeg"/>
+          <ContactCard name="Bisesh" position="Vice captain" image="/assets/Aquatics/BiseshAgarwal.jpeg"/>
         </div>
       </div>
     </div>
