@@ -2,9 +2,9 @@ import Navbar from "../components/Navbar/Navbar";
 import achieve from "../images/achieve.svg";
 import ContactCard from "../components/ContactCard";
 import CricketHero from "../components/CricketHero";
-import image1 from "/assets/Aquatics/Aquatics3.jpeg";
-import image2 from "/assets/Aquatics/Aquatics4.jpeg";
-import image3 from "/assets/Aquatics/Aquatics5.jpeg";
+import image1 from "/assets/Football/Football3.jpeg";
+import image2 from "/assets/Football/Football4.jpeg";
+import image3 from "/assets/Football/Football5.jpeg";
 import ImageCarousel from "../components/CarouselSports";
 
 const Football = () => {
@@ -40,17 +40,17 @@ const Football = () => {
             <div className="flex flex-row gap-11 mt-32 mb-16">
               <div className="h-[360px] w-[296px] bg-[#F4F4F4] border-8 border-[#A2A2A2] rounded-xl relative">
                 <img
-                  src="/assets/Aquatics/Aquatics6.jpeg"
+                  src="/assets/Football/Football10.jpeg"
                   className="h-[344px] border-4 border-[#A2A2A2] absolute top-0 left-0"
                   alt="GSC_Logo"
                 />
               </div>
               <div className="h-[360px] w-[296px] bg-[#F4F4F4] border-8 border-[#A2A2A2] rounded-xl relative">
-                {/* <img
-        src=""
-        className="h-[397px] border-4 border-[#A2A2A2] absolute top-0 left-0"
-        alt="GSC_Logo"
-      /> */}
+                <img
+                  src="/assets/Football/Football8.jpeg"
+                  className="h-[344px] border-4 border-[#A2A2A2] absolute top-0 left-0"
+                  alt="GSC_Logo"
+                />
               </div>
             </div>
           </div>
@@ -59,18 +59,17 @@ const Football = () => {
             <div className="flex flex-row gap-3 items-center justify-around mt-10 z-20">
               <div className="h-[200px] w-[150px] bg-[#F4F4F4] border-8 border-[#A2A2A2] rounded-xl">
                 <img
-                  src="/assets/Aquatics/Aquatics6.jpeg"
-                  // className="h-[397px] border-4 border-[#A2A2A2]"
+                  src="/assets/Football/Football1.jpeg"
                   className="h-[184px]"
                   alt="GSC_Logo"
                 />
               </div>
               <div className="h-[200px] w-[150px] bg-[#F4F4F4] border-8 border-[#A2A2A2] rounded-xl">
-                {/* <img
-                src=""
-                className="h-[397px] border-4 border-[#A2A2A2]"
-                alt="GSC_Logo"
-              /> */}
+                <img
+                  src="/assets/Football/Football2.jpeg"
+                  className="h-[184px]"
+                  alt="GSC_Logo"
+                />
               </div>
             </div>
             <p className="font-lexend text-[10px] text-[#000000] my-auto mx-auto px-[35px] justify-center items-center flex">
@@ -97,31 +96,31 @@ const Football = () => {
             <div className="flex flex-row gap-11 mb-16 items-center justify-center">
               <div className="h-[360px] w-[296px] bg-[#F4F4F4] border-8 border-[#A2A2A2] rounded-xl relative">
                 <img
-                  src="/assets/Aquatics/Aquatics3.jpeg"
+                  src="/assets/Football/Football3.jpeg"
                   className="h-[344px] border-4 border-[#A2A2A2] absolute top-0 left-0"
                   alt="GSC_Logo"
                 />
               </div>
               <div className="h-[360px] w-[296px] bg-[#F4F4F4] border-8 border-[#A2A2A2] rounded-xl relative">
                 <img
-                  src="/assets/Aquatics/Aquatics4.jpeg"
+                  src="/assets/Football/Football4.jpeg"
                   className="h-[344px] border-4 border-[#A2A2A2] absolute top-0 left-0"
                   alt="GSC_Logo"
                 />
               </div>
               <div className="h-[360px] w-[296px] bg-[#F4F4F4] border-8 border-[#A2A2A2] rounded-xl relative">
                 <img
-                  src="/assets/Aquatics/Aquatics5.jpeg"
+                  src="/assets/Football/Football5.jpeg"
                   className="h-[344px] border-4 border-[#A2A2A2] absolute top-0 left-0"
                   alt="GSC_Logo"
                 />
               </div>
               <div className="h-[360px] w-[296px] bg-[#F4F4F4] border-8 border-[#A2A2A2] rounded-xl relative">
-                {/* <img
-                  src=""
+                <img
+                  src="/assets/Football/Football6.jpeg"
                   className="h-[344px] border-4 border-[#A2A2A2] absolute top-0 left-0"
-                  //   alt="GSC_Logo"
-                /> */}
+                  alt="GSC_Logo"
+                />
               </div>
             </div>
           </div>
@@ -138,14 +137,38 @@ const Football = () => {
           </p>
         </div>
         <div className="sm:flex flex-row items-center gap-28 hidden">
-          <ContactCard image="/assets/Aquatics/Aquatics2.jpeg" />
-          <ContactCard />
-          <ContactCard />
+          <ContactCard
+            image="/assets/Football/coach.jpeg"
+            name="Asad Khan"
+            position="Coach"
+          />
+          <ContactCard
+            image="/assets/Football/c.jpeg"
+            name="Soham"
+            position="Captian"
+          />
+          <ContactCard
+            image="/assets/Football/vc.jpeg"
+            name="Harsh"
+            position="Vice Captian"
+          />
         </div>
         <div className="flex flex-col items-center lg:hidden">
-          <ContactCard image="/assets/Aquatics/Aquatics2.jpeg" />
-          <ContactCard />
-          <ContactCard />
+          <ContactCard
+            image="/assets/Football/coach.jpeg"
+            name="Asad Khan"
+            position="Coach"
+          />
+          <ContactCard
+            image="/assets/Football/c.jpeg"
+            name="Soham"
+            position="Captian"
+          />
+          <ContactCard
+            image="/assets/Football/vc.jpeg"
+            name="Harsh"
+            position="Vice Captian"
+          />
         </div>
       </div>
     </div>
