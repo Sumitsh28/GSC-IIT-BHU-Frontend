@@ -4,6 +4,8 @@ import TeamCard from "../components/TeamCard";
 import cricket from "../assets/cricket.png";
 import aquatics from "/assets/Aquatics/Aquatics8.jpg"
 import atheletics from "/assets/Atheletics/Atheletics4.jpg"
+import badminton from "/assets/Badminton/IMG-20240316-WA0056.jpg"
+import basketball from "/assets/Basketball/basketball.jpg"
 import { Link } from "react-router-dom";
 function Sports() {
   const [scrolling, setScrolling] = useState(false);
@@ -27,8 +29,8 @@ function Sports() {
       facebook: "facebook",
     },
     {
-      name: "Cricket",
-      imageUrl: cricket,
+      name: "Badminton",
+      imageUrl: badminton,
       email: "john.doe@example.com",
       instagram: "john_doe_instagram",
       linkedin: "john_doe_linkedin",
@@ -36,8 +38,8 @@ function Sports() {
       facebook: "facebook",
     },
     {
-      name: "Cricket",
-      imageUrl: cricket,
+      name: "Basketball",
+      imageUrl: basketball,
       email: "john.doe@example.com",
       instagram: "john_doe_instagram",
       linkedin: "john_doe_linkedin",
